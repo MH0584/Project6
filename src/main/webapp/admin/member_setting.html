@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>관리자 페이지 - 회원 관리</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/main.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/clear.css'>
+
+</head>
+<body>
+  <!-- lnb_area -->
+  <aside class="lnb_area">
+    <nav class = "navbar">
+      <div class = "main_menu navbar_collapse">
+        <ul class = "nav navbar_nav">
+          <li class = "menu_title menu_item_has_children">
+            회원
+            <ul class = "sub_menu children">
+              <li>
+                <a href = "#">회원 관리</a>
+              </li>
+              <li>
+                <a href = "#">기대평, 후기 관리</a>
+              </li>
+            </ul>
+          </li>
+          <li class = "menu_title menu_item_has_children">
+            판매
+            <ul class = "sub_menu children">
+              <li>
+                <a href = "#">판매 현황</a>
+              </li>
+            </ul>
+          </li>
+          <li class = "menu_title menu_item_has_children">
+            혜택
+            <ul class = "sub_menu children">
+              <li>
+                <a href = "#">공지사항 관리</a>
+              </li>
+            </ul>
+          </li>
+          <li class = "menu_title menu_item_has_children">
+            고객 응대
+            <ul class = "sub_menu children">
+              <li>
+                <a href = "#">문의 내역 관리</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- lnb 제외 contents -->
+  <div class="contents">
+    <!-- 헤더 header -->
+    <header id="header" class="header">
+      <!-- 헤더 left -->
+      <div class = "top_left">
+        <h3>6조 관리자 페이지</h3>
+      </div>
+    </header>
+    <!-- right 내용 -->
+    <div class="info_header">
+        <h3>사용자 목록</h3>
+    </div>
+    <div class="info_main">
+      <form>
+        <!-- 검색창 -->
+        <div class="member_search_area">
+          <input type="text" name="member" class="member_search_input" placeholder="ID 또는 이메일 입력">
+          <!-- 검색 버튼 -->
+          <button type="submit" class="search_btn">
+            <img src="/assets/img/search.png">
+          </button>
+          <!-- 삭제 버튼 -->
+          <div class="member_delete_area">
+            <button type="submit" class="delete_button">
+              <span>삭제</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- 테이블 영역 -->
+      <div class = "search_result_txt">전체 사용자 <span>1</span>명</div>
+      <div class="info_table_area">
+        <table>
+          <thead>
+            <tr>
+              <th scope = "col" style="width: 30px"><input type="checkbox"></th>
+              <th scope = "col" style="width: 100px">닉네임</th>
+              <th scope = "col" style="width: 100px">아이디</th>
+              <th scope = "col" style="width: 130px;">이메일</th>
+              <th scope = "col" style="width: 80px;">가입일</th>
+              <th scope = "col" style="width: 100px">문의/기대평/후기</th>
+              <th scope = "col" style="width: 100px">누적 구매금액</th>
+              <th scope = "col" style="width: 100px">생년월일</th>
+              <th scope = "col" style="width: 100px">성별</th>
+              <th scope = "col" style="width: 100px">이름</th>
+              <th scope = "col" style="width: 150px;">주소</th>
+              <th scope = "col" style="width: 100px">환불계좌</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>야호</td>
+              <td>yaho123</td>
+              <td>yaho123@naver.com</td>
+              <td>2024.05.29</td>
+              <td>0/0/0</td>
+              <td>15,000</td>
+              <td>1999.01.01</td>
+              <td>여자</td>
+              <td>홍길동</td>
+              <td>서울시 마포구 홍대입구역</td>
+              <td>123412341111</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

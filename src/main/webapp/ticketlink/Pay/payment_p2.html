@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/payment_p2.css">
+  <script>
+    function updateTotal() {
+      let ticketPrice = 66000;
+      let quantity = document.getElementById('qty').value;
+      let total = ticketPrice * quantity;
+
+      document.getElementById('ticketAmount').textContent = total.toLocaleString() + '원';
+      document.getElementById('totalAmount').textContent = total.toLocaleString() + ' ';
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById('qty').addEventListener('change', updateTotal);
+      updateTotal();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <img src="/assets/img/ticklink/종튼.png" alt=""> 
+  </header>
+  <div class="paystepup2">
+    <img src="/assets/img/ticklink/결제단계2.png" alt="">
+  <main>
+    <div class="main_1">
+      <div class="border_red">
+        <div class="warning">선택한 좌석이 고객님께 선점되었습니다. <span class="redcol">8분 이내 결제하지 않으실 경우 선점된 좌석이 해제</span>됩니다.</div>
+      </div>
+      <div class="selectticketguide">
+        티켓종류,할인,매수 선택
+      </div>
+      <div class="selectticket">
+        <b>R석</b>을 <b>1매</b>를 선택하셨습니다.
+      </div>
+      <div class="selectqty">
+        <div>일반(정가)</div>
+        <div>
+          <div style="font-size: 18px;">일반</div>
+          <div><b style="font-size: 18px;">66,000</b><span style="font-size: 18px;">원</span></div>
+        </div>
+        <div>
+          <select name="qty" id="qty">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="main_2">
+      <div class="titleimgbox">
+        <div>
+          <img src="https://image.toast.com/aaaaab/ticketlink/TKL_2/gloomy_pst_0603.jpg" alt="" style="width: 41px; height: 50px;">
+        </div>
+        <div>뮤지컬&lt;사의찬미></div>
+      </div>
+      <div class="reservationinfo">
+        예매정보
+      </div>
+      <div class="reservationinfoborder">
+        <div>R석</div>
+        <div>G열15번</div>
+      </div>
+      <div class="resertable">
+        <div>일시</div>
+        <div>2024.06.20(목)16:00</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>티켓금액</div>
+        <div id="ticketAmount">66,000원</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>예매수수료</div>
+        <div>0</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>배송료</div>
+        <div>0</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>쿠폰할인</div>
+        <div>0</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>총결제</div>
+        <div><span id=totalAmount>0</span>원</div>
+      </div>
+      <div class="divhrblack"></div>
+      <div class="cancel"><span class="canceltitle">취소기한:</span>2024.06.19.17:00</div>
+      <div class="cancel" style="margin-top: 0px;"><span class="canceltitle">취소수수료:</span>티켓금액의 0%~30%</div>
+      <div class="prenextbutton">
+        <div><button class="prenextbtn" onclick="location.href='/ticketlink/Pay/payment_p1.html'">이전단계</button></div>
+        <div><button class="prenextbtn" onclick="location.href='/ticketlink/Pay/payment_p3.html'">다음단계</button></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

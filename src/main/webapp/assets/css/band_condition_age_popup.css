@@ -1,0 +1,185 @@
+.lyWrap {
+  z-index: 30000;
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background: rgba(0, 0, 0, .75);
+  overflow: auto;
+}
+.ageContent {
+  position: relative;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .34), 0 10px 10px 0 rgba(0, 0, 0, .06);
+  align-self: flex-start;
+  width: 380px !important;
+}
+.modalHeader {
+  position: relative;
+  padding: 0 30px;
+  border-bottom: 1px solid #d9d9d9 !important;
+  text-align: center;
+  display: block;
+}
+.modalHeader::before {
+  display: table;
+  content: '';
+  text-align: center;
+}
+.h1Header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  box-sizing: border-box;
+  padding: 12px 0 11px;
+}
+.modalHeadere::after {
+  clear: both;
+  display: table;
+  content: '';
+}
+.modalContentAge {
+  padding: 0 20px;
+  padding-top: 20px !important;
+  text-align: center !important;
+}
+.tableList {
+  width: auto;
+  table-layout: auto;
+  display: inline-table;
+  border-collapse: collapse;
+}
+.minAge {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+.min_age {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 10px !important;
+  color: #666 !important;
+}
+.age_select {
+  background: #fcfcfc;
+  position: relative;
+  display: inline-block;
+  height: 36px;
+  border: 1px solid #ebebeb;
+  vertical-align: top;
+}
+.age_select::before {
+  z-index: 1;
+  vertical-align: top;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  margin-top: -4px;
+  width: 12px;
+  height: 8px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_icons.png);
+  background-position: -429px -667px;
+}
+.selectMinYear {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 0 33px 0 10px;
+  border: 0;
+  border-radius: 0;
+  background: 0 0;
+  text-align: left;
+  appearance: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666 !important;
+}
+.min_age_max_age {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  color: #666 !important;
+}
+.maxAge {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  color: #666 !important;
+}
+.max_age {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 10px !important;
+}
+.selectMaxYear {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 0 33px 0 10px;
+  border: 0;
+  border-radius: 0;
+  background: 0 0;
+  text-align: left;
+  appearance: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666 !important;
+}
+.modalFooter {
+  margin: 0 20px;
+  padding: 20px 0 25px;
+  font-size: 0;
+  text-align: center;
+  display: block;
+}
+.btnCancel {
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  line-height: 1;
+  position: relative;
+  min-width: 90px;
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: 500;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btnConfirm {
+  margin: 0 5px;
+  line-height: 1;
+  position: relative;
+  min-width: 90px;
+  height: 34px;
+  padding: 0 15px;
+  background: #474e60;
+  border-radius: 1px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+}

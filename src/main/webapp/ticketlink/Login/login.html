@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/login.css">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div id="container" class="container login">
+        <div class="loginWrap">
+            <div class="loginLogo">
+             <h1 style="margin: 0;">
+                <span>종원링크</span>
+            </h1>
+            </div>
+            <form id="loginFrm" name="loginFrm" action="/login/submit" >
+                <div class="loginInner">
+                    <div class="loginForm">
+                        <div class="inputBox">
+                            <div class="style_input id">
+                                <label for="">
+                                    <input type="text" name="userId" id="userId" placeholder="아이디" class="con_input id">
+                                    <span id="conClear" class="del_btn" style="display: none;"></span>
+                                </label>
+                            </div>
+                            <div class="style_input pw">
+                                <label for="">
+                                    <input type="password" name="userPw" id="userPw" placeholder="비밀번호" class="con_input pw">
+                                    <span id="conClear" class="del_btn" style="display: none;"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="errorMessage">
+                            <div class="message">
+                                아이디 또는 비밀번호가 맞지 않아요. 다시 입력해 주세요.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign">
+                        <div class="checkbox">
+                            <input type="checkbox" id="saveSess" name="saveSess" value="N">
+                            <label for="saveSess">로그인 상태 유지</label>
+                        </div>
+                    </div>
+                    <div class="loginButtonBox">
+                        <button type="button" class="loginBtn" id="btn_login">
+                            <span>로그인</span>
+                        </button>
+                    </div>
+                    <div class="findList">
+                        <ul>
+                            <li><a href="">아이디 찾기</a></li>
+                            <li><a href="">비밀번호 찾기</a></li>
+                            <li><a href="">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="snsLogin">
+                        <ul>
+                            <li id="kakao_li">
+                              <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Faccounts.interpark.com%252Fmember%252Flogin.do%253F_method%253DloginKakaoResult%26state%3D%26through_account%3Dtrue%26client_id%3Dcb6dd3048009fc6dec77006c8031d90a#login" class="kakao" id="openid_kakao">
+                                <span>카카오톡</span>
+                              </a>
+                            </li>
+                            <li id="naver_li">
+                              <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=OjMXIqLDpjGKOT9U3Usb&redirect_uri=https://accounts.interpark.com/openid/callback/naver&state=xC8FmLjLNPIBAw9sUyRUqdeoewQM1ioYZf-nWVXtpB8" class="naver" id="openid_naver">
+                                <span>네이버</span>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // 로그인 유지 버튼 기능
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            document.querySelector(".checkbox input").addEventListener("change", function() {
+                var check = document.querySelector(".checkbox input");
+
+                if (check.value === "N") {
+                    check.value = "Y";
+                }   else {
+                    check.value = "N";
+                }
+            });
+
+            // 로그인 버튼 누르면 약간 효과
+            document.querySelector(".loginBtn").addEventListener("mousedown", function() {
+                this.classList.add("special");
+            });
+            document.querySelector(".loginBtn").addEventListener("mouseup", function() {
+                this.classList.remove("special");
+            });
+            document.querySelector(".loginBtn").addEventListener("mouseleave", function() {
+                this.classList.remove("special");
+            });
+        });
+    </script>
+    <script src="/assets/js/del_btn.js"></script>
+</body>
+</html>

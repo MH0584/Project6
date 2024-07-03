@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/payment_p1.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.css"
+  />
+  <script>
+    function setPanzoom() {
+      const container = document.getElementById("playhallseat");
+      const img = container.querySelector('img');
+      const options = { 
+        maxScale: 5,
+        MinScale: 0.5,
+        click: "toggleZoom",
+        contain: false
+      };
+      const panzoom = new Panzoom(container, options);
+      const panX = (container.offsetWidth - img.naturalWidth * options.startScale) / 2;
+      const panY = (container.offsetHeight - img.naturalHeight * options.startScale) / 2;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const img = document.querySelector('#playhallseat img');
+      img.onload = function () {
+        setPanzoom();
+      };
+      if (img.complete) {
+        setPanzoom();
+      }
+    });
+  </script> -->
+</head>
+<body>
+  <header>
+    <img src="/assets/img/ticklink/종튼.png" alt="">
+  </header>
+  <div id="paystepup1">
+    <img src="/assets/img/ticklink/결제단계1.png" alt="">
+  </div>
+  <div id="main">
+    <div>
+      <div>
+        <span class="playtitle">뮤지컬 &lt;사의찬미></span>
+        <br/>
+        <span class="playhallname">디큐브 링크아트센터</span> 
+        <span class="line"> </span>
+        <span class="playstartdatetime"> 2024.06.11(화) 19:30</span>
+        <div class="btn">
+          <button class="episodeBtn">회차변경</button>
+        </div>
+      </div>
+      <div id="playhallseat">
+        <!-- <img src="img/공연장좌석1.png" alt="">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat1"; style="top: 147px; left: 125px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat2"; style="top: 147px; left: 141px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat3"; style="top: 147px; left: 157px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat4"; style="top: 147px; left: 173px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat5"; style="top: 147px; left: 189px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat6"; style="top: 147px; left: 205px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat7"; style="top: 147px; left: 221px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat8"; style="top: 147px; left: 254px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat9"; style="top: 147px; left: 270px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat10"; style="top: 147px; left: 286px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat11"; style="top: 147px; left: 302px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat12"; style="top: 147px; left: 318px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat13"; style="top: 147px; left: 334px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat14"; style="top: 147px; left: 350px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat15"; style="top: 147px; left: 366px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat16"; style="top: 147px; left: 382px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat17"; style="top: 147px; left: 398px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat18"; style="top: 147px; left: 431px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat19"; style="top: 147px; left: 447px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat20"; style="top: 147px; left: 463px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat21"; style="top: 147px; left: 479px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat22"; style="top: 147px; left: 495px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat23"; style="top: 147px; left: 511px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat24"; style="top: 147px; left: 527px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat25"; style="top: 164px; left: 125px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat26"; style="top: 164px; left: 141px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat27"; style="top: 164px; left: 157px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat28"; style="top: 164px; left: 173px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat29"; style="top: 164px; left: 189px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat30"; style="top: 164px; left: 205px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat31"; style="top: 164px; left: 221px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat32"; style="top: 164px; left: 254px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat33"; style="top: 164px; left: 270px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat34"; style="top: 164px; left: 286px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat35"; style="top: 164px; left: 302px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat36"; style="top: 164px; left: 318px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat37"; style="top: 164px; left: 334px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat38"; style="top: 164px; left: 350px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat39"; style="top: 164px; left: 366px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat40"; style="top: 164px; left: 382px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat41"; style="top: 164px; left: 398px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat42"; style="top: 164px; left: 431px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat43"; style="top: 164px; left: 447px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat44"; style="top: 164px; left: 463px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat45"; style="top: 164px; left: 479px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat46"; style="top: 164px; left: 495px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat47"; style="top: 164px; left: 511px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat48"; style="top: 164px; left: 527px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat49"; style="top: 181px; left: 125px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat50"; style="top: 181px; left: 141px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat51"; style="top: 181px; left: 157px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat52"; style="top: 181px; left: 173px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat53"; style="top: 181px; left: 189px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat54"; style="top: 181px; left: 205px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat55"; style="top: 181px; left: 221px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat56"; style="top: 181px; left: 254px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat57"; style="top: 181px; left: 270px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat58"; style="top: 181px; left: 286px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat59"; style="top: 181px; left: 302px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat60"; style="top: 181px; left: 318px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat61"; style="top: 181px; left: 334px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat62"; style="top: 181px; left: 350px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat63"; style="top: 181px; left: 366px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat64"; style="top: 181px; left: 382px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat65"; style="top: 181px; left: 398px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat66"; style="top: 181px; left: 431px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat67"; style="top: 181px; left: 447px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat68"; style="top: 181px; left: 463px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat69"; style="top: 181px; left: 479px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat70"; style="top: 181px; left: 495px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat71"; style="top: 181px; left: 511px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat72"; style="top: 181px; left: 527px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat73"; style="top: 198px; left: 125px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat74"; style="top: 198px; left: 141px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat75"; style="top: 198px; left: 157px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat76"; style="top: 198px; left: 173px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat77"; style="top: 198px; left: 189px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat78"; style="top: 198px; left: 205px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat79"; style="top: 198px; left: 221px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat80"; style="top: 198px; left: 254px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat81"; style="top: 198px; left: 270px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat82"; style="top: 198px; left: 286px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat83"; style="top: 198px; left: 302px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat84"; style="top: 198px; left: 318px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat85"; style="top: 198px; left: 334px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat86"; style="top: 198px; left: 350px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat87"; style="top: 198px; left: 366px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat88"; style="top: 198px; left: 382px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat89"; style="top: 198px; left: 398px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat90"; style="top: 198px; left: 431px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat91"; style="top: 198px; left: 447px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat92"; style="top: 198px; left: 463px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat93"; style="top: 198px; left: 479px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat94"; style="top: 198px; left: 495px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat95"; style="top: 198px; left: 511px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat96"; style="top: 198px; left: 527px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat97"; style="top: 215px; left: 125px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat98"; style="top: 215px; left: 141px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat99"; style="top: 215px; left: 157px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat100"; style="top: 215px; left: 173px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat101"; style="top: 215px; left: 189px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat102"; style="top: 215px; left: 205px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat103"; style="top: 215px; left: 221px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat104"; style="top: 215px; left: 254px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat105"; style="top: 215px; left: 270px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat106"; style="top: 215px; left: 286px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat107"; style="top: 215px; left: 302px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat108"; style="top: 215px; left: 318px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat109"; style="top: 215px; left: 334px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat110"; style="top: 215px; left: 350px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat111"; style="top: 215px; left: 366px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat112"; style="top: 215px; left: 382px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat113"; style="top: 215px; left: 398px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat114"; style="top: 215px; left: 431px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat115"; style="top: 215px; left: 447px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat116"; style="top: 215px; left: 463px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat117"; style="top: 215px; left: 479px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat118"; style="top: 215px; left: 495px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat119"; style="top: 215px; left: 511px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat120"; style="top: 215px; left: 527px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat121"; style="top: 232px; left: 125px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat122"; style="top: 232px; left: 141px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat123"; style="top: 232px; left: 157px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat124"; style="top: 232px; left: 173px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat125"; style="top: 232px; left: 189px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat126"; style="top: 232px; left: 205px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat127"; style="top: 232px; left: 221px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat128"; style="top: 232px; left: 254px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat129"; style="top: 232px; left: 270px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat130"; style="top: 232px; left: 286px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat131"; style="top: 232px; left: 302px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat132"; style="top: 232px; left: 318px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat133"; style="top: 232px; left: 334px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat134"; style="top: 232px; left: 350px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat135"; style="top: 232px; left: 366px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat136"; style="top: 232px; left: 382px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat137"; style="top: 232px; left: 398px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat138"; style="top: 232px; left: 431px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/R_seat.png" alt="" class="reserved" id="seat139"; style="top: 232px; left: 447px" data-original-src="/Payment/img/R_seat.png">
+        <img src="/Payment/img/S_seat.png" alt="" class="reserved" id="seat140"; style="top: 232px; left: 463px" data-original-src="/Payment/img/S_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat141"; style="top: 232px; left: 479px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat142"; style="top: 232px; left: 495px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat143"; style="top: 232px; left: 511px" data-original-src="/Payment/img/A_seat.png">
+        <img src="/Payment/img/A_seat.png" alt="" class="reserved" id="seat144"; style="top: 232px; left: 527px" data-original-src="/Payment/img/A_seat.png">
+        소극장-->
+        <img src="/assets/img/ticklink/공연장좌석2.png" alt="">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat1"; style="top: 112px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat2"; style="top: 112px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat3"; style="top: 112px; left: 265px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat4"; style="top: 112px; left: 281px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat5"; style="top: 112px; left: 297px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat6"; style="top: 112px; left: 313px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat7"; style="top: 112px; left: 329px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat8"; style="top: 112px; left: 345px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat9"; style="top: 112px; left: 361px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat10"; style="top: 112px; left: 377px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat11"; style="top: 112px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat12"; style="top: 112px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat13"; style="top: 129px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat14"; style="top: 129px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat15"; style="top: 129px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat16"; style="top: 129px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat17"; style="top: 129px; left: 265px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat18"; style="top: 129px; left: 281px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat19"; style="top: 129px; left: 297px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat20"; style="top: 129px; left: 313px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat21"; style="top: 129px; left: 329px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat22"; style="top: 129px; left: 345px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat23"; style="top: 129px; left: 361px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat24"; style="top: 129px; left: 377px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat25"; style="top: 129px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat26"; style="top: 129px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat27"; style="top: 129px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat28"; style="top: 129px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat29"; style="top: 146px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat30"; style="top: 146px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat31"; style="top: 146px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat32"; style="top: 146px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat33"; style="top: 146px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat34"; style="top: 146px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat35"; style="top: 146px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat36"; style="top: 146px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat37"; style="top: 146px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat38"; style="top: 146px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat39"; style="top: 146px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat40"; style="top: 146px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat41"; style="top: 146px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat42"; style="top: 146px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat43"; style="top: 146px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat44"; style="top: 146px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat45"; style="top: 163px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat46"; style="top: 163px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat47"; style="top: 163px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat48"; style="top: 163px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat49"; style="top: 163px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat50"; style="top: 163px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat51"; style="top: 163px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat52"; style="top: 163px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat53"; style="top: 163px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat54"; style="top: 163px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat55"; style="top: 163px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat56"; style="top: 163px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat57"; style="top: 163px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat58"; style="top: 163px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat59"; style="top: 163px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat60"; style="top: 163px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat61"; style="top: 163px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat62"; style="top: 163px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat63"; style="top: 180px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat64"; style="top: 180px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat65"; style="top: 180px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat66"; style="top: 180px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat67"; style="top: 180px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat68"; style="top: 180px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat69"; style="top: 180px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat70"; style="top: 180px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat71"; style="top: 180px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat72"; style="top: 180px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat73"; style="top: 180px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat74"; style="top: 180px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat75"; style="top: 180px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat76"; style="top: 180px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat77"; style="top: 180px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat78"; style="top: 180px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat79"; style="top: 180px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat80"; style="top: 180px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat81"; style="top: 197px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat82"; style="top: 197px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat83"; style="top: 197px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat84"; style="top: 197px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat85"; style="top: 197px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat86"; style="top: 197px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat87"; style="top: 197px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat88"; style="top: 197px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat89"; style="top: 197px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat90"; style="top: 197px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat91"; style="top: 197px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat92"; style="top: 197px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat93"; style="top: 197px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat94"; style="top: 197px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat95"; style="top: 197px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat96"; style="top: 197px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat97"; style="top: 197px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat98"; style="top: 197px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat99"; style="top: 197px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat100"; style="top: 197px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat101"; style="top: 214px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat102"; style="top: 214px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat103"; style="top: 214px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat104"; style="top: 214px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat105"; style="top: 214px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat106"; style="top: 214px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat107"; style="top: 214px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat108"; style="top: 214px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat109"; style="top: 214px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat110"; style="top: 214px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat111"; style="top: 214px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat112"; style="top: 214px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat113"; style="top: 214px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat114"; style="top: 214px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat115"; style="top: 214px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat116"; style="top: 214px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat117"; style="top: 214px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat118"; style="top: 214px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat119"; style="top: 214px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat120"; style="top: 214px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat121"; style="top: 231px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat122"; style="top: 231px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat123"; style="top: 231px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat124"; style="top: 231px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat125"; style="top: 231px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat126"; style="top: 231px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat127"; style="top: 231px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat128"; style="top: 231px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat129"; style="top: 231px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat130"; style="top: 231px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat131"; style="top: 231px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat132"; style="top: 231px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat133"; style="top: 231px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat134"; style="top: 231px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat135"; style="top: 231px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat136"; style="top: 231px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat137"; style="top: 231px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat138"; style="top: 231px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat139"; style="top: 231px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat140"; style="top: 231px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat141"; style="top: 231px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat142"; style="top: 231px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat143"; style="top: 248px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat144"; style="top: 248px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat145"; style="top: 248px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat146"; style="top: 248px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat147"; style="top: 248px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat148"; style="top: 248px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat149"; style="top: 248px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat150"; style="top: 248px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat151"; style="top: 248px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat152"; style="top: 248px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat153"; style="top: 248px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat154"; style="top: 248px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat155"; style="top: 248px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat156"; style="top: 248px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat157"; style="top: 248px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat158"; style="top: 248px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat159"; style="top: 248px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat160"; style="top: 248px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat161"; style="top: 248px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat162"; style="top: 248px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat163"; style="top: 248px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat164"; style="top: 248px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat165"; style="top: 280px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat166"; style="top: 280px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat167"; style="top: 280px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat168"; style="top: 280px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat169"; style="top: 280px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat170"; style="top: 280px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat171"; style="top: 280px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat172"; style="top: 280px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat173"; style="top: 280px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat174"; style="top: 280px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat175"; style="top: 280px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat176"; style="top: 280px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat177"; style="top: 280px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat178"; style="top: 280px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat179"; style="top: 280px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat180"; style="top: 280px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat181"; style="top: 280px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat182"; style="top: 280px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat183"; style="top: 280px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat184"; style="top: 280px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat185"; style="top: 297px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat186"; style="top: 297px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat187"; style="top: 297px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat188"; style="top: 297px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat189"; style="top: 297px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat190"; style="top: 297px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat191"; style="top: 297px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat192"; style="top: 297px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat193"; style="top: 297px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat194"; style="top: 297px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat195"; style="top: 297px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat196"; style="top: 297px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat197"; style="top: 297px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat198"; style="top: 297px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat199"; style="top: 297px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat200"; style="top: 297px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat201"; style="top: 297px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat202"; style="top: 297px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat203"; style="top: 297px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat204"; style="top: 297px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat205"; style="top: 297px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat206"; style="top: 297px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat207"; style="top: 314px; left: 120px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat208"; style="top: 314px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat209"; style="top: 314px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat210"; style="top: 314px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat211"; style="top: 314px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat212"; style="top: 314px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat213"; style="top: 314px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat214"; style="top: 314px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat215"; style="top: 314px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat216"; style="top: 314px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat217"; style="top: 314px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat218"; style="top: 314px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat219"; style="top: 314px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat220"; style="top: 314px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat221"; style="top: 314px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat222"; style="top: 314px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat223"; style="top: 314px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat224"; style="top: 314px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat225"; style="top: 314px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat226"; style="top: 314px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat227"; style="top: 314px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat228"; style="top: 314px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat229"; style="top: 314px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat230"; style="top: 314px; left: 522px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat231"; style="top: 331px; left: 120px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat232"; style="top: 331px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat233"; style="top: 331px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat234"; style="top: 331px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat235"; style="top: 331px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat236"; style="top: 331px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat237"; style="top: 331px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat238"; style="top: 331px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat239"; style="top: 331px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat240"; style="top: 331px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat241"; style="top: 331px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat242"; style="top: 331px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat243"; style="top: 331px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat244"; style="top: 331px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat245"; style="top: 331px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat246"; style="top: 331px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat247"; style="top: 331px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat248"; style="top: 331px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat249"; style="top: 331px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat250"; style="top: 331px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat251"; style="top: 331px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat252"; style="top: 331px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat253"; style="top: 331px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat254"; style="top: 331px; left: 522px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat255"; style="top: 348px; left: 120px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat256"; style="top: 348px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat257"; style="top: 348px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat258"; style="top: 348px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat259"; style="top: 348px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat260"; style="top: 348px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat261"; style="top: 348px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat262"; style="top: 348px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat263"; style="top: 348px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat264"; style="top: 348px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat265"; style="top: 348px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat266"; style="top: 348px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat267"; style="top: 348px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat268"; style="top: 348px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat269"; style="top: 348px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat270"; style="top: 348px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat271"; style="top: 348px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat272"; style="top: 348px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat273"; style="top: 348px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat274"; style="top: 348px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat275"; style="top: 348px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat276"; style="top: 348px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat277"; style="top: 348px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat278"; style="top: 348px; left: 522px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat279"; style="top: 365px; left: 120px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat280"; style="top: 365px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat281"; style="top: 365px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat282"; style="top: 365px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat283"; style="top: 365px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat284"; style="top: 365px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat285"; style="top: 365px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat286"; style="top: 365px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat287"; style="top: 365px; left: 265px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat288"; style="top: 365px; left: 281px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat289"; style="top: 365px; left: 297px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat290"; style="top: 365px; left: 313px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat291"; style="top: 365px; left: 329px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat292"; style="top: 365px; left: 345px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat293"; style="top: 365px; left: 361px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/VIP_seat.png" alt="" class="reserved" id="seat294"; style="top: 365px; left: 377px" data-original-src="/assets/img/ticklink/VIP_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat295"; style="top: 365px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat296"; style="top: 365px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat297"; style="top: 365px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat298"; style="top: 365px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat299"; style="top: 365px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat300"; style="top: 365px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat301"; style="top: 365px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat302"; style="top: 365px; left: 522px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat303"; style="top: 382px; left: 120px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat304"; style="top: 382px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat305"; style="top: 382px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat306"; style="top: 382px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat307"; style="top: 382px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat308"; style="top: 382px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat309"; style="top: 382px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat310"; style="top: 382px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat311"; style="top: 382px; left: 265px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat312"; style="top: 382px; left: 281px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat313"; style="top: 382px; left: 297px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat314"; style="top: 382px; left: 313px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat315"; style="top: 382px; left: 329px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat316"; style="top: 382px; left: 345px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat317"; style="top: 382px; left: 361px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat318"; style="top: 382px; left: 377px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat319"; style="top: 382px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat320"; style="top: 382px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat321"; style="top: 382px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat322"; style="top: 382px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat323"; style="top: 382px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat324"; style="top: 382px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat325"; style="top: 382px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat326"; style="top: 382px; left: 522px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat327"; style="top: 399px; left: 120px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat328"; style="top: 399px; left: 136px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat329"; style="top: 399px; left: 152px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat330"; style="top: 399px; left: 168px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat331"; style="top: 399px; left: 184px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat332"; style="top: 399px; left: 200px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat333"; style="top: 399px; left: 233px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat334"; style="top: 399px; left: 249px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat335"; style="top: 399px; left: 265px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat336"; style="top: 399px; left: 281px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat337"; style="top: 399px; left: 297px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat338"; style="top: 399px; left: 313px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat339"; style="top: 399px; left: 329px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat340"; style="top: 399px; left: 345px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat341"; style="top: 399px; left: 361px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat342"; style="top: 399px; left: 377px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat343"; style="top: 399px; left: 393px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/R_seat.png" alt="" class="reserved" id="seat344"; style="top: 399px; left: 409px" data-original-src="/assets/img/ticklink/R_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat345"; style="top: 399px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat346"; style="top: 399px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat347"; style="top: 399px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat348"; style="top: 399px; left: 490px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat349"; style="top: 399px; left: 506px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/A_seat.png" alt="" class="reserved" id="seat350"; style="top: 399px; left: 522px" data-original-src="/assets/img/ticklink/A_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat351"; style="top: 445px; left: 151px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat352"; style="top: 445px; left: 167px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat353"; style="top: 445px; left: 183px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat354"; style="top: 445px; left: 199px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat355"; style="top: 445px; left: 442px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat356"; style="top: 445px; left: 458px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat357"; style="top: 445px; left: 474px" data-original-src="/assets/img/ticklink/S_seat.png">
+        <img src="/assets/img/ticklink/S_seat.png" alt="" class="reserved" id="seat358"; style="top: 445px; left: 490px" data-original-src="/assets/img/ticklink/S_seat.png">
+        
+        
+        
+                <!--여기에 예약된좌석정보입력-->
+        <!-- <img src="/Payment/img/빈좌석.png" alt="" style="top: 0; left: 0;"> -->
+      </div>
+    </div>
+    <div>
+      <img src="/assets/img/ticklink/공연장좌석2.png" alt="" class="playhallseatimgsmall">
+      <div class="kingframe">
+        <div class="frame">
+          <div class="frame_1">등급선택</div>
+          <div class="frame_2">
+            <button class="f5" onClick="window.location.reload()">
+              새로고침
+            </button>
+          </div>
+        </div>
+        <div class="box1">
+          <div class="box_block1">전체</div>
+          <div class="box_block2">
+            <span class="colorbox" style="background-color:#ED1C24"></span>
+            <span class="seatgrade">VIP석</span>
+            <span>160,000원</span>
+            <span class="seatstatus">0석</span>
+          </div>
+          <div class="box_block2">
+            <span class="colorbox" style="background-color:#3F48CC"></span>
+            <span class="seatgrade">R석</span>
+            <span>140,000원</span>
+            <span class="seatstatus">0석</span>
+          </div>
+          <div class="box_block2">
+            <span class="colorbox" style="background-color:#FFF200"></span>
+            <span class="seatgrade">S석</span>
+            <span>110,000원</span>
+            <span class="seatstatus">0석</span>
+          </div>
+          <div class="box_block2">
+            <span class="colorbox" style="background-color:#22B14C"></span>
+            <span class="seatgrade">A석</span>
+            <span>80,000원</span>
+            <span class="seatstatus">0석</span>
+          </div>
+          <div class="box_block3">
+            <span class="colorbox" style="background-color: #7F7F7F;"></span> 
+            <span class="seatgrade" style="margin-left: 15px;">예약석</span>
+          </div>
+        </div>
+        <div class="whktjrtjswja">
+          <img src="/assets/img/ticklink/좌석선점어쩌구.png" alt="">
+        </div>
+        <div class="prenextbutton">
+          <div><button class="prenextbtn" >이전단계</button></div>
+          <div><button class="prenextbtn" onclick="location.href='/ticketlink/Pay/payment_p2.html'">다음단계</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var images = document.querySelectorAll('.reserved');
+    var clickedSrc = '/assets/img/ticklink/선택한좌석.png';
+
+    images.forEach(function(image) {
+        var originalSrc = image.getAttribute('data-original-src');
+
+        image.addEventListener('click', function() {
+            var currentSrc = image.src.split('/').pop();
+            var originalFileName = originalSrc.split('/').pop();
+
+            if (currentSrc === originalFileName) {
+                image.src = clickedSrc;
+            } else {
+                image.src = originalSrc;
+            }
+        });
+    });
+});
+
+  </script>
+</body>
+</html>

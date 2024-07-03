@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티켓링크 -포트폴리오용</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/footer.css">
+    <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <!-- 스와이퍼 스크립트 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.main_swiper_box .sm_box li a').click(function(e){
+                e.preventDefault();
+                
+                var imgsrc = $(this).attr('href');
+                $('#big_banner a img').attr('src',imgsrc);
+                
+                $(this).parent().addClass('on').siblings().removeClass('on');
+                
+            });
+            $('.main_swiper_box .sm_box li').mouseover(function(e){
+                e.preventDefault();
+                
+                var imgsrc = $(this).attr('href');
+                $('.big_banner img').attr('src',imgsrc);
+                
+                $(this).parent().addClass('on').siblings().removeClass('on');
+                
+            });
+        });
+    
+    </script>
+    <script>
+        // var swiper = new Swiper(".mySwiper", {
+        // slidesPerView : 1,
+        // centeredSlides: true,
+        // speed: 500,
+        // effect: fade,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
+        // });
+      </script>
+     <style>
+        .card_item_04{margin: 50px 28px 0 0;width: 259px;}
+     </style>
+</head>
+        <header>
+            <div class="utill">
+                <div class="inner">
+                    <ul>
+                        <li class="utill_link"><a href="#">로그인</a></li>
+                        <li class="utill_link"><a href="#">예매확인/취소</a></li>
+                        <li class="utill_link"><a href="#">회원가입</a></li>
+                        <li class="utill_link"><a href="#">고객센터</a></li>
+                        <li class="utill_link"><a href="#">마이페이지</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="nav_box">
+                <div class="inner">
+                    <h1 class="logo"><a href="../html/main.html">로고</a></h1>
+                    <ul class="nav">
+                        <li><a href="#">공연/전시</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gnb_box">
+                <div class="inner">
+                    <ul class="gnb_list">
+                        <li class="gnb_link"><a href="#">홈</a></li>
+                        <li class="gnb_link"><a href="#">공연</a></li>
+                        <li class="gnb_link"><a href="#">전시</a></li>
+                        <li class="gnb_link"><a href="#">랭킹</a></li>
+                        <li class="gnb_link"><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+        <div id="app">
+            <div class="main_swiper_box swiper mySwiper">
+                <div class="big_banner swiper-wrapper" id="big_banner">
+                    <div class="swiper-slide"><a href="#"><img src="/assets/img/ticklink/BigBanner_01.jpg" alt="메인이미지"></a></div>
+                </div>
+                <ul class="sm_box">
+                    <li class="sm_img on">
+                        <a href="/assets/img/ticklink/BigBanner_01.jpg"><img src="/assets/img/ticklink/thumbnail_01.jpg" alt=""></a>
+                    </li>
+                    <li class="sm_img">
+                        <a href="/assets/img/ticklink/BigBanner_02.jpg"><img src="/assets/img/ticklink/thumbnail_02.jpg" alt=""></a>
+                    </li>
+                    <li class="sm_img">
+                        <a href="/assets/img/ticklink/BigBanner_01.jpg"><img src="/assets/img/ticklink/thumbnail_01.jpg" alt=""></a>
+                    </li>
+                    <li class="sm_img">
+                        <a href="/assets/img/ticklink/BigBanner_02.jpg"><img src="/assets/img/ticklink/thumbnail_02.jpg" alt=""></a>
+                    </li>
+                </ul>   
+            </div>
+            <section class="con_box inner">
+                <div class="con_header">
+                    <h2 class="con_tit">티켓오픈</h2>
+                    <a href="#">전체보기</a>
+                </div>
+                <div class="item_box">
+                    <ul class="item_list">
+                        <li class="card_item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4 class="item_tit">[단독판매] 어쩌다 발견한 하루</h4>
+                                    <div class="info_box">
+                                        <span class="item_date">2024.06.27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="/assets/img/ticklink/cardnews_03.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4 class="item_tit">[단독판매] 어쩌다 발견한 하루</h4>
+                                    <div class="info_box">
+                                        <span class="item_date">2024.06.27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4 class="item_tit">[단독판매] 어쩌다 발견한 하루</h4>
+                                    <div class="info_box">
+                                        <span class="item_date">2024.06.27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4 class="item_tit">[단독판매] 어쩌다 발견한 하루</h4>
+                                    <div class="info_box">
+                                        <span class="item_date">2024.06.27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                </div>
+                                <div class="txt_box">
+                                    <h4 class="item_tit">[단독판매] 어쩌다 발견한 하루</h4>
+                                    <div class="info_box">
+                                        <span class="item_date">2024.06.27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 동영상 -->
+            <!-- <section class="con_box bg_gray">
+                <div class="inner">
+                    <div class="con_header">
+                        <h2 class="sec_tit">TICKET SPOT</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>뮤지컬 아이스쇼 <br>G-SHOW :HTE LUNA</h3>
+                            <p></p>
+                        </div>
+                        <div>
+                            <iframe src="https://i.vimeocdn.com/video/1868630427-e974676565053de6414091e83ac533d3f18403f24bcf6f6a44f0eb9884e742df-d?mw=600&amp;mh=337" style="width:100%;height:100%" frameborder="0"></iframe>
+                        </div>
+                        
+                </div>
+            </section> -->
+            <!-- 베스트 공연/전시 -->
+            <section class="con_box">
+                <div class="inner">
+                    <div class="con_header">
+                        <h2 class="con_tit">베스트 공연&middot;전시</h2>
+                    </div>
+                    <div class="item_box">
+                        <ul class="item_list">
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;미오 프라텔로&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_03.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;협객자객&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;미오 프라텔로&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;미오 프라텔로&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_03.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;협객자객&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;미오 프라텔로&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_03.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;협객자객&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;미오 프라텔로&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_03.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;협객자객&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;미오 프라텔로&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_03.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;협객자객&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="card_item_04">
+                                <a href="#">
+                                    <div class="img_box">
+                                        <img src="/assets/img/ticklink/cardnews_02.jpg" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <h4 class="item_tit">뮤지컬 &lt;유진과 유진&gt;</h4>
+                                        <div class="info_box">
+                                            <span class="item_sub_tit">링크아트센터드림 드림4관</span>
+                                            <span class="item_date">2024.06.27</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 공연장 / 길찾기 -->
+            <section class="con_box">
+                <div class="inner">
+                    <div class="con_header">
+                        <h2 class="con_tit">공연장</h2>
+                    </div>
+                    <div class="con_sub">
+                        <p class="con_sub_tit">지역별 공연장과 맛집 검색</p>
+                    </div>
+                    <div class="area_btn_box">
+                        <ul class="area_btn_list">
+                            <li class="area_btn_item">
+                                <button class="area_btn">서울</button>
+                            </li>
+                            <li class="area_btn_item">
+                                <button class="area_btn">대전</button>
+                            </li>
+                            <li class="area_btn_item">
+                                <button class="area_btn">대구</button>
+                            </li>
+                            <li class="area_btn_item">
+                                <button class="area_btn">부산</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map_area">
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        </main>
+
+        <!-- 맨 밑 하단 안내사항 -->
+        <footer id="common_footer">
+            <button type="button" class="btn_move_top is-active is-stuck">
+            <!-- ::before -->
+            <span class="blind1">맨 위로 이동하기</span>
+            </button>
+            <div class="footer_menu">
+            <ul class="footer_menu_list">
+                <li class="footer_menu_item">
+                <a href="/introduction/company" class="footer_menu_link">회사소개</a>
+                </li>
+                <li class="footer_menu_item">
+                <!-- ::before -->
+                <a href="/terms/personalInforamtion" class="footer_menu_link">
+                <span class="text_bold">개인정보 처리방침</span>
+                </a>
+                </li>
+                <li class="footer_menu_item">
+                <!-- ::before -->
+                <a href="/term/youth" class="footer_menu_link">청소년 보호정책</a>
+                </li>
+                <li class="footer_menu_item">
+                <!-- ::before -->
+                <a href="/terms/use" class="footer_menu_link">이용약관</a>
+                </li>
+                <li class="footer_menu_item">
+                <!-- ::before -->
+                <a href="/help/main" class="footer_menu_link">고객센터</a>
+                </li>
+                <li class="footer_menu_item">
+                <!-- ::before -->
+                <a href="/help/partner" class="footer_menu_link">티켓판매안내</a>
+                </li>
+                <li class="footer_menu_item">
+                <!-- ::before -->
+                <a href="/advertisement/" class="footer_menu_link">광고안내</a>
+                </li>
+            </ul>
+            </div>
+        <!-- 맨 밑 하단 회사정보-->
+            <div class="footer_inner">
+            <span class="footer_corp_title"><b>준영 주식회사</b></span>
+            <address class="footer_address">
+                <p>
+                <span class="footer_address_item">주소: 06043 서울특별시 강남구 강남대로</span>
+                <span class="footer_address_item">
+                    <!-- before -->
+                    대표이사: 이준영
+                </span>
+                <span class="footer_address_item">
+                    <!-- before -->
+                    사업자등록번호: 144-81-25090
+                </span>
+                </p>
+                <p>
+                <span class="footer_address_item">010-6368-9069</span>
+                <span class="footer_address_item">
+                    <!-- before -->
+                    tjsans9069@naver.com
+                </span>
+                <span class="footer_address_item">
+                    <!-- before -->
+                    통신판매업 신고번호: 제 2023-서울강남-04352호
+                </span>
+                <span class="footer_address_item">
+                    <!-- before -->
+                    <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1448125090" target="_blank" class="btn_hyperlink" rel="noreferrer"><b>사업자정보확인</b></a>
+                </span>
+                <span class="footer_address_item">
+                    <!-- before -->
+                    개인정보보호 책임자: 이지수
+                </span>
+                </p>
+            </address>
+            <span class="footer_copyright">Copyright @ JY LINK Corporation. All rights reserved.</span>
+            <div class="footer_etc">
+                <ul class="footer_sns">
+                <li class="footer_sns_item">
+                    <a href="https://blog.naver.com/" target="_blank" class="footer_sns_link" rel="noreferrer">
+                    <span class="common_icon icon_naverblog_gray">
+                        <span class="blind">네이버블로그</span>
+                        <!-- after -->
+                    </span>
+                    </a>
+                </li>
+                <li class="footer_sns_item">
+                    <a href="https://www.instagram.com/" target="_blank" class="footer_sns_link" rel="noreferrer">
+                    <span class="common_icon icon_instagram_gray">
+                        <span class="blind">인스타</span>
+                    </span>
+                    </a>
+                </li>
+                <li class="footer_sns_item">
+                    <a href="https://www.youtube.com/" target="_blank" class="footer_sns_link" rel="noreferrer">
+                    <span class="common_icon icon_youtube_gray">
+                        <span class="blind">유튜브</span>
+                    </span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+.header {
+    width: 100%;
+    height: 68px;
+}
+.container {
+    width: 100%;
+    height: 564.500px;
+}
+.loginWrap {
+    width: 400px;
+    height: 564.500px;
+    margin: 0 auto;
+}
+.loginLogo {
+    width: 400px;
+    height: 54.600px;
+    position: relative;
+    text-align: center;
+}
+.loginInner {
+    position: static;
+    margin-top: 68px;
+    padding: 0 0 25px;
+    width: 400px;
+    height: 416.900px;
+}
+.loginForm {
+    width: 400px;
+    height: 110.400px;
+}
+input:focus {outline:none;}
+.inputBox {
+    border: .1px solid #ddd;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+.style_input.id {
+    border: 0;
+    box-sizing: border-box;
+    padding: 15px 14px 15px 14px;
+    height: 50%;
+    position: relative;
+}
+.style_input.pw {
+    border-top: .1px solid #ddd;
+    box-sizing: border-box;
+    padding: 15px 14px 15px 14px;
+    height: 50%;
+    position: relative;
+}
+.con_input {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin-left: 12px;
+    font-size: 15px;
+    color: #000;
+    order: 2;
+    border: 0;
+    border-width: 0;
+    
+}
+.errorMessage {
+    width: 100%;
+    height: 19.5px;
+    margin-top: 12px;
+}
+.message {
+    position: static;
+    color: red;
+    font-size: 13px;
+}
+.sign {
+    top: 32px;
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    height: 21px;
+}
+.checkbox {
+    width: 133.18px;
+    height: 21px;
+}
+.checkbox label {
+    display: inline-block;
+    height: 21px;
+    font-size: 13px;
+    padding-left: 28px;
+    background: url(//openimage.interpark.com/UI/login/mobile/icon_checkbox_off.svg) no-repeat;
+    color: #1c1c1e;
+    cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    opacity: .00001;
+}
+.checkbox input[type="checkbox"]:checked + label {
+    background: url(//openimage.interpark.com/UI/login/mobile/icon_checkbox_on.svg) no-repeat;
+    background-size: 21px;
+}
+.loginButtonBox {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+}
+.loginBtn {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 52px;
+    border-radius: 1.2rem;
+    background-color: #fa2828;
+    border: 0;
+    cursor: pointer;
+}
+.loginBtn span {
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+}
+.findList {
+    top: 32px;
+    position: relative;
+    width: 100%;
+    height: 19.500px;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.findList ul {
+    font-size: 12px;
+    padding: 0;
+}
+.findList li {
+    display: inline-block;
+    padding: 0 12px;
+}
+.findList a {
+    color: #666;
+    text-decoration: none;
+}
+.findList li:last-child a {
+    color: #1769ff;
+}
+.snsLogin {
+    top: 31px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 46px 0 52px;
+}
+.snsLogin ul {
+    padding: 0;
+    font-size: 0;
+}
+.snsLogin li {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.snsLogin li a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.loginInner .snsLogin li a.kakao {
+    background: url(//openimage.interpark.com/UI/login/mobile/icon_kakao.svg) no-repeat center #fedd35;
+}      
+.snsLogin li a.naver {
+    background: url(//openimage.interpark.com/UI/login/mobile/icon_naver.svg) no-repeat center #1ec800;
+} 
+.del_btn {
+    position: absolute;
+    top: 17px;
+    right: 11px;
+    z-index: 2;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url(//openimage.interpark.com/.ui/openId/pc/btn_input_del.png) no-repeat center center #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+/* 자바스크립트 연동 효과*/
+.special {
+    opacity: 0.5;
+}

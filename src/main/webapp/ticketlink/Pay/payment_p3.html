@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/payment_p3.css"></head>
+<body>
+  <header>
+    <img src="/assets/img/ticklink/종튼.png" alt=""> 
+  </header>
+  <div class="paystepup3">
+    <img src="/assets/img/ticklink/결제단계3.png" alt="">
+  </div>
+  <main>
+    <div class="main_1">
+      <div class="howtoreceive">수령방법</div>
+      <div class="howtoreceivebox">
+        <div class="ticket">티켓</div>
+        <div class="pickupbox">현장수령</div>
+      </div>
+      <div class="pickupnotice">*티켓은 관람일 당일 현장에서 예매번호 및 본인확인 후 수령할 수 있습니다.</div>
+      <div class="ordererinformation">주문자 정보</div>
+      <div class="ordererinformationbox1">
+        <div class="orderername">이름<span class="colred">*</span></div>
+        <div class="orderernameresult">김종원</div>
+        <div class="phonenumber">휴대폰번호<span class="colred">*</span></div>
+        <div><input type="text" value="01095287136" class="inputphonenumber"></div>
+      </div>
+      <div class="ordererinformationbox2">
+        <div class="orderername">이메일</div>
+        <div><input type="text" value="jwpsp@naver.com" class="inputemail"></div>
+      </div>
+      <div class="ordererok">예매자 확인</div>
+      <div class="agreebox1">
+        <div class="checkboxdiv1"><input type="checkbox"></div>
+        <div class="agreecheck1">주문자 확인 및 예매처리를 위해 휴대폰번호,이메일,(배송수령 시)주소,(입력필요 시)생년월일을 수집하며,<br/>
+        이용목적 달성 이후 파기합니다.</div>
+      </div>
+      <div class="agreebox2">
+        <div class="checkboxdiv2"><input type="checkbox"></div>
+        <div class="agreecheck2">개인정보 제 3자 제공에 동의합니다.(고객응대 및 관람정보안내 등을 위함)</div>
+      </div>
+    </div>
+    <div class="main_2">
+      <div class="titleimgbox">
+        <div>
+          <img src="https://image.toast.com/aaaaab/ticketlink/TKL_2/gloomy_pst_0603.jpg" alt="" style="width: 41px; height: 50px;">
+        </div>
+        <div>뮤지컬&lt;사의찬미></div>
+      </div>
+      <div class="reservationinfo">
+        예매정보
+      </div>
+      <div class="reservationinfoborder">
+        <div>R석</div>
+        <div>G열15번</div>
+      </div>
+      <div class="resertable">
+        <div>일시</div>
+        <div>2024.06.20(목)16:00</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>티켓금액</div>
+        <div id="ticketAmount">66,000원</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>예매수수료</div>
+        <div>0</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>배송료</div>
+        <div>0</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>쿠폰할인</div>
+        <div>0</div>
+      </div>
+      <div class="divhrgrey"></div>
+      <div class="resertable">
+        <div>총결제</div>
+        <div><span id=totalAmount>66,000 </span>원</div>
+      </div>
+      <div class="divhrblack"></div>
+      <div class="cancel"><span class="canceltitle">취소기한:</span>2024.06.19.17:00</div>
+      <div class="cancel" style="margin-top: 0px;"><span class="canceltitle">취소수수료:</span>티켓금액의 0%~30%</div>
+      <div class="agreebox3">
+        <div class="checkboxdiv3"><input type="checkbox"></div>
+        <div class="agreecheck3">취소기한 및 취소수수료 동의</div>
+      </div>
+      <div class="prenextbutton">
+        <div><button class="prenextbtn" onclick="location.href='/ticketlink/Pay/payment_p2.html'">이전단계</button></div>
+        <div><button class="redprenextbtn" onclick="window.open('/ticketlink/Pay/prepare.html')">결제하기</button></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

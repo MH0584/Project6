@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      width: 880px;
+      height: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .container > div:nth-child(1){
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 300px;
+    }
+    .container > div:nth-child(2){
+      font-weight: 200;
+      font-size: 15px;
+      margin-top: 20px;
+    }
+    .btn{
+      height: 50px;
+      font-size: 18px;
+      width: 144px;
+      height: 50px;
+      border-radius: 50px;
+      margin-top: 30px;
+      background-color: #242424;
+      color: white;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background-color: #555555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>문의 접수가 완료되었습니다.</div>
+    <div>회원님의 문의에 최대한 빠르고 정확한 답변을 드리기 위해 노력하겠습니다. 감사합니다.</div>
+    <div class="buttondiv"><button class="btn" onclick="location.href='/ticketlink/inquire/inquire_details.html'">문의내역</button></div>
+  </div>
+</body>
+</html>

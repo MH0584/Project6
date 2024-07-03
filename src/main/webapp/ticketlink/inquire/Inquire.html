@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* div{border: 1px solid red;} */
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    input, textarea, select {
+      border: 1px solid #D2D2D2;
+    }
+    #container{
+      margin: 0 auto;
+      padding-top: 45px;
+      width: 880px;
+      height: 807px;
+    }
+    #container > div:nth-child(1){
+      font-size: 40px;
+      text-align: center;
+      font-weight: 400;
+    }
+    .inquirydiv{
+    width:800px;
+    height: 700px;
+    margin: 5px auto 0;
+    border-top: 1px solid black;
+    display: flex;
+    }
+    .itemdiv{
+      background-color: #FAFAFA;
+      height: 696px;
+    }
+    button{
+      background-color: black;
+      color: white;
+    }
+    .colred{
+      color: red;
+    }
+    .item1{
+      width: 190px;
+      height: 89px;
+      padding: 30px 0px 20px 30px;
+    }
+    .item2{
+      width: 190px;
+      height: 129px;
+      padding: 38px 0px 20px 30px;
+    }
+    .item3{
+      width: 190px;
+      height: 79px;
+      padding: 30px 0px 20px 30px;
+    }
+    .item4{
+      width: 190px;
+      height: 79px;
+      padding: 20px 0px 20px 30px;
+    }
+    .item5{
+      width: 190px;
+      height: 89px;
+      padding: 20px 0px 20px 30px;
+    }
+    .item6{
+      width: 190px;
+      height: 151px;
+      padding: 50px 0px 20px 30px;
+    }
+    .item7{
+      width: 190px;
+      height: 81px;
+      padding: 20px 0px 20px 30px;
+    }
+    .contentdiv{
+      width: 610px;
+      height: 696px;
+    }
+    .content1{
+      width:610px;
+      height: 89px;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content1 > select{
+      width: 580px;
+      height: 40px;
+      font-size: 15px;
+    }
+    .content2{
+      width:610px;
+      height: 129px;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content3{
+      width:610px;
+      height: 79px;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content4{
+      width:610px;
+      height: 79px;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content5{
+      width:610px;
+      height: 89px;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content6{
+      width:610px;
+      height: 151px;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content7{
+      width:610px;
+      height: 81px;
+      display: flex;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    .content7 > div:nth-child(1){
+      width: 160px;
+    }
+    .email{
+      width: 175px;
+      height: 38px;
+      padding-left: 8px;
+    }
+    #emailSelector{
+      margin-top: 5px;
+      width: 190px;
+      height: 38px;
+    }
+    #reservationnum{
+      width: 580px;
+      height: 40px;
+      font-size: 15px;
+    }
+    #product{
+      width: 580px;
+      height: 40px;
+      font-size: 15px;
+    }
+    #title{
+      width: 580px;
+      height: 40px;
+      font-size: 15px;
+    }
+    #content{
+      width: 580px;
+      height: 100px;
+      padding-left: 8px;
+      resize: none;
+    }
+    .addfileinfo{
+      font-size: 16px;
+      margin-left: 14px;
+    }
+    .agree{
+      font-size: 13px;
+      margin: 15px auto 0px;
+      width: 800px;
+    }
+    .agreecheck{
+      margin: 30px auto 0px;
+      width: 800px;
+      display: flex;
+    }
+    .agreeinfo{
+      margin-left: 15px;
+    }
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 17px;
+      height: 17px;
+      border: 1px solid #000;
+      position: relative;
+      cursor: pointer;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #000;
+      border: 2px solid #000;
+    }
+    input[type="checkbox"]:checked::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 3px;
+      width: 6px;
+      height: 12px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    .end{
+      height: 50px;
+      font-size: 18px;
+      width: 144px;
+      height: 50px;
+      border-radius: 50px;
+      margin-left: 328px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .end:hover{
+      background-color: #555555;
+    }
+    .endbox{
+      margin: 30px auto;
+      width: 800px;
+    }
+    .file-input-container {
+      position: relative;
+      display: inline-block;
+    }
+    .file-input {
+      display: none;
+    }
+    .file-label {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #242424;
+      transition: background-color 0.3s ease;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 40px;
+    }
+    .file-label:hover {
+      background-color: #555555;
+    }
+    #file_name{
+      padding-top: 4px;
+      letter-spacing: -1px;
+      font-size: 14px;
+      border: 0.5px solid #D2D2D2;
+      height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space : nowrap;
+      background-color: #D2D2D2;
+    }
+  </style>
+  <title>문의하기</title>
+</head>
+<body>
+  <div id="container">
+    <div>문의하기</div>
+    <div class="inquirydiv">
+      <div class="itemdiv">
+        <div class="item1">유형<span class="colred">*</span></div>
+        <div class="item2">이메일</div>
+        <div class="item3">예매번호</div>
+        <div class="item4">상품명</div>
+        <div class="item5">제목<span class="colred">*</span></div>
+        <div class="item6">문의내용<span class="colred">*</span></div>
+        <div class="item7">첨부파일</div>
+      </div>
+      <div class="contentdiv">
+        <div class="content1">
+          <select name="category" id="category">
+            <option value="예매">예매 관련 문의</option>
+            <option value="취소 | 변경">취소 | 변경 관련 문의</option>
+            <option value="결제">결제 관련 문의</option>
+            <option value="회원정보">회원정보 관련 문의</option>
+            <option value="건의사항">건의사항 관련 문의</option>
+            <option value="기타">기타 관련 문의</option>
+          </select>
+        </div>
+        <div class="content2">
+          <input type="text" class="email" id="emailUser"> @ <input type="text" class="email" id="emailDomain"><br>
+          <select name="email" id="emailSelector">
+            <option value="">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="hotmail.com">hotmail.com</option>
+            <option value="yahoo.com">yahoo.com</option>
+            <option value="live.com">live.com</option>
+            <option value="outlook.com">outlook.com</option>
+            <option value="msn.com">msn.com</option>
+            <option value="icloud.com">icloud.com</option>
+          </select>
+      </div>
+        <div class="content3">
+          <input type="text" id="reservationnum">
+        </div>
+        <div class="content4">
+          <input type="text" id="product">
+        </div>
+        <div class="content5">
+          <input type="text" id="title">
+        </div>
+        <div class="content6">
+          <textarea name="content" id="content"></textarea>
+        </div>
+        <div class="content7">
+          <div class="file-input-container">
+            <input type="file" id="addfile" class="file-input">
+            <label for="addfile" class="file-label">파일 선택</label>
+            <div id="file_name" class="file-name"></div>
+          </div>
+          <div class="addfileinfo">
+            10MB 이내 모든 이미지 및 허용된 확장자 파일을 최대 5개까지<br>첨부 가능합니다.!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="agree">
+      수집하는 개인 정보[(필수) 이메일, 문의내용, (선택) 첨부 파일]는 문의 내용 처리 및 고객 불만을 해결하기 위해 사용되며, <b>관련<br> 법령에 따라 3년간 보관 후 삭제</b>됩니다.<br>
+      문의 접수, 처리 및 회신을 위해 꼭 필요한 정보이므로 동의해 주셔야 서비스를 이용하실 수 있습니다
+    </div>
+    <div class="agreecheck"><input type="checkbox">
+      <div class="agreeinfo">위,개인정보 수집 및 활용에 동의합니다.
+      </div>
+    </div>
+    <div class="endbox"><button class="end" onclick="location.href='/ticketlink/inquire/inquire_success.html'">접수</button></div>
+  </div>
+  <script>
+    document.getElementById('emailSelector').addEventListener('change', function() {
+      var selectedDomain = this.value;
+      document.getElementById('emailDomain').value = selectedDomain;
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      var fileInput = document.getElementById('addfile');
+      var fileNameElement = document.getElementById('file_name');
+      fileNameElement.textContent = '선택된 파일이 없습니다.';
+      fileInput.addEventListener('change', function(event) {
+        var fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '선택된 파일이 없습니다.';
+        fileNameElement.textContent = fileName;
+      });
+    })
+</script>
+</body>
+</html>

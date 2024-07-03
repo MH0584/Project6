@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항</title>
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/ticketlink/Customer_Service_Center/notice.css">
+</head>
+
+<body>
+  <header>
+    <div class="utill">
+        <div class="inner">
+            <ul>
+                <li class="utill_link"><a href="#">로그인</a></li>
+                <li class="utill_link"><a href="#">예매확인/취소</a></li>
+                <li class="utill_link"><a href="#">회원가입</a></li>
+                <li class="utill_link"><a href="#">고객센터</a></li>
+                <li class="utill_link"><a href="#">마이페이지</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div class="nav_box">
+        <div class="inner">
+            <h1 class="logo"><a href="../html/main.html">로고</a></h1>
+            <ul class="nav">
+                <li><a href="#">공연/전시</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gnb_box">
+        <div class="inner">
+            <ul class="gnb_list">
+                <li class="gnb_link"><a href="#">홈</a></li>
+                <li class="gnb_link"><a href="#">공연</a></li>
+                <li class="gnb_link"><a href="#">전시</a></li>
+                <li class="gnb_link"><a href="#">랭킹</a></li>
+                <li class="gnb_link"><a href="#">커뮤니티</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- 고객센터 본문(상단메뉴) -->
+<main id="container" class="common_container cs_center" role="main">
+  <div class="main_body">
+    <div class="quick_menu">
+      <div class="title">
+        <!-- before -->
+         <h2>고객센터</h2>
+      </div>
+      <ul>
+        <li class="qmenu1" id="menu">
+          <a href="" class="id_pw1">
+            <!-- before -->
+            아이디<br/>
+            패스워드 찾기
+          </a>
+        </li>
+        <li class="qmenu2" id="menu">
+          <a href="" class="id_pw2">
+            <!-- before -->
+            상담내역<br/>
+            확인하기
+          </a>
+        <li class="qmenu3" id="menu">
+          <a href="" class="id_pw3">
+            <!-- before -->
+            예매취소<br/>
+            환불문의
+          </a>
+        </li>
+        <li class="qmenu4" id="menu">
+          <a href="" class="id_pw4">
+            <!-- before -->
+            할인수단<br/>
+            안내
+          </a>
+        </li>
+        <li class="qmenu5" id="menu">
+          <a href=""class="id_pw5">
+            <!-- before -->
+            할인카드<br/>
+            안내보기
+          </a>
+        </li>
+      </ul>  
+  </div>
+
+  <div class="help_cont">
+    <ul class="help_menu">
+        <li class="help_meu1" id="on">
+          <!-- href 추가/ on 클릭시 빨간색으로 바뀜 -->
+          <a href="" class="meu1">
+            고객센터 홈
+            <!-- after -->
+          </a>
+        </li>
+        <li class="help_meu2" id="off">
+              <!-- href 추가/ on 클릭시 빨간색으로 바뀜 -->
+              <a href="" class="meu1">
+                공지사항
+                <!-- after -->
+              </a>
+        </li>
+        <li class="help_meu3">
+          <a href="" class="meu1">
+            FAQ
+            <!-- after -->
+          </a>
+        </li>
+        <li class="help_inquiry_meu">
+          <a href="" class="meu1">
+            1:1상담
+            <!-- after -->
+          </a>
+        </li>
+        <li class="help_inquiry_history">
+          <a href="" class="meu1">
+            1:1문의내역
+            <!-- after -->
+          </a>
+        </li>
+        <li class="menu_sub">
+          <span class="submenu_tit">안내</span>
+          <ul class="help_tit">
+              <li class="reserveGuide" id="on">
+                <a href="">예매안내</a>
+              </li>
+              <li class="memberGuide" id="off">
+                <a href="">회원정보안내</a>
+              </li>
+              <li class="commissionGuide" id="off">
+                <a href="">수수료안내</a>
+              </li>
+              <li class="refundGuide" id="off">
+                <a href="">취소/환불안내</a>
+              </li>
+              <li class="discountGuide" id="off">
+                <a href="">할인수단안내</a>
+              </li>
+              <li class="discountcardGuide" id="off">
+                <a href="">할인카드안내</a>
+              </li>
+              <li class="legalGuide" id="off">
+                <a href="">부정이용안내</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+<!-- 1:1상담/ 1:1문의내역 팝업 -->
+      <input id="inquiryUrl" type="hidden" value="">
+      <input id="inquiryHistoryUrl" type="hidden" value="">
+<!-- 고객센터 본문 수수료안내 -->
+        <div class="help_rcont">
+          <h3 class="info_reserve con_head">공지사항</h3>
+            <div class="search_help faq_search">
+              <div class="selectbox_wrap">
+                <div class="selectbox">
+                  <a class="select">
+                    <!-- before -->
+                     전체
+                  </a>
+                  <ul class="select_list" style="display:none;">
+                    <li>
+                      <a href="#">전체</a>
+                    </li>
+                    <li>
+                      <a href="#">티켓오픈</a>
+                    </li>
+                    <li>
+                      <a href="#">변경/취소</a>
+                    </li>
+                    <li>
+                      <a href="#">시스템관련</a>
+                    </li>
+                    <li>
+                      <a href="#">기타</a>
+                    </li>
+                  </ul>
+                </div>
+                <input type="text" title="검색어 입력" placeholder="검색어를 입력하세요" value>
+                <a class="btn0 btn_full0">검색</a> 
+              </div>
+            </div>
+            <ul class="htab_common1 hmain_tab1">
+              <li class="on" >
+                <!-- before -->
+                 <a>전체</a>
+                <!-- after -->
+                </li class>
+                <li class>
+                  <a>티켓오픈</a>
+                <!-- after -->
+                </li>
+                <li class>
+                  <a>변경/취소</a>
+                <!-- after -->
+                </li>
+                <li class>
+                  <a>시스템관련</a>
+                <!-- after -->
+                </li>
+                <li class>
+                  <a>기타</a>
+                <!-- after -->
+                </li>
+            </ul>
+            <div class="basic_table table_faq">
+              <table>
+                <caption>공지사항</caption>
+                <colgroup>
+                  <col style="width: 100px">
+                  <col>
+                  <col style="width: 100px">
+                  <col style="width: 100px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">카테고리</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">등록일</th>
+                    <th scope="col">조회수</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>티켓오픈</td>
+                    <td class="t1">
+                      <a href="">인형극 콩쥐팥쥐 - 대구​ 티켓오픈 안내</a>
+                    </td>
+                    <td class="number">2024.02.01</td>
+                    <td class="hits">2</td>
+                  </tr>
+                  <tr>
+                    <td>티켓오픈</td>
+                    <td class="t1">
+                      <a href="">연극 &lt;일리아드&gt; 3차​ 티켓오픈 안내.</a>
+                    </td>
+                    <td class="number">2023.06.23</td>
+                    <td class="hits">41</td>
+                  </tr>
+                  <tr>
+                    <td>티켓오픈</td>
+                    <td class="t1">
+                      <a href="">2024 어린이 서커스 마술쇼 - 평택 (남부) 티켓오픈 안내</a>
+                    </td>
+                    <td class="number">2022.11.24</td>
+                    <td class="hits">3</td>
+                  </tr>
+                  <tr>
+                    <td>테켓오픈</td>
+                    <td class="t1">
+                      <a href="">	[단독판매] 대구관악합주단 초청연주회 &lt; Bands Around the World &gt;​ 티켓오픈 안내</a>
+                    </td>
+                    <td class="number">2022.08.10</td>
+                    <td class="hits">20</td>
+                  </tr>
+                  <tr>
+                    <td>티켓오픈</td>
+                    <td class="t1">
+                      <a href="">	[단독판매] 극단열전 - 조지 버나드 쇼 &lt;무기와 인간&gt; 티켓오픈 안내</a>
+                    </td>
+                    <td class="number">2022.08.10</td>
+                    <td class="hits">7</td>
+                  </tr>
+                  <tr>
+                    <td>티켓오픈</td>
+                    <td class="t1">
+                      <a href="">​2024 심수봉 전국투어 콘서트 : 꽃길 - 김해​ 티켓오픈 안내</a>
+                    </td>
+                    <td class="number">2022.06.24</td>
+                    <td class="hits">37</td>
+                  </tr>
+                  <tr>
+                    <td>변경/취소</td>
+                    <td class="t1">
+                      <a href="">[공연일정연기안내] 노래인생 60년 기념 이미자 음악회 부산공연</a>
+                    </td>
+                    <td class="number">2022.06.24</td>
+                    <td class="hits">42</td>
+                  </tr>
+                  <tr>
+                    <td>변경/취소</td>
+                    <td class="t1">
+                      <a href="">2020 양지원 미니콘서트&팬미팅 오픈취소안내</a>
+                    </td>
+                    <td class="number">2022.06.24</td>
+                    <td class="hits">2418</td>
+                  </tr>
+                  <tr>
+                    <td>시스템</td>
+                    <td class="t1">
+                      <a href="">[공지] 시스템 임시점검(1/5 02:00 ~ 08:00)으로 인한 서비스 일시 중단 안내.</a>
+                    </td>
+                    <td class="number">2022.06.24</td>
+                    <td class="hits">16</td>
+                  </tr>
+                  <tr>
+                    <td>기타</td>
+                      <td class="t1">
+                        <a href="">	[공지] 블루 아카이브 2.5주년 페스티벌 미인증 예매자 취소 및 재오픈 안내</a>
+                      </td>
+                      <td class="number">2022.06.24</td>
+                      <td class="hits">44</td>
+                  </tr>
+                </tbody>
+              </table>  
+            </div>
+            <div class="paging">
+              <a class="first">
+                맨앞
+                <!-- after -->
+              </a>
+              <a class="prev">
+                이전
+                <!-- after -->
+              </a>
+              <strong>1</strong>
+              <a>2</a>
+              <a>3</a>
+              <a>4</a>
+              <a class="next"></a>
+              <a class="end"></a>
+            </div>
+
+        </div>
+        <!-- after -->   
+    </div>
+  </div>
+</main>
+
+
+
+
+<!-- 맨 밑 하단 안내사항 -->
+<footer id="common_footer">
+  <button type="button" class="btn_move_top is-active is-stuck">
+    <!-- ::before -->
+    <span class="blind1">맨 위로 이동하기</span>
+  </button>
+  <div class="footer_menu">
+    <ul class="footer_menu_list">
+      <li class="footer_menu_item">
+        <a href="/introduction/company" class="footer_menu_link">회사소개</a>
+      </li>
+      <li class="footer_menu_item">
+      <!-- ::before -->
+      <a href="/terms/personalInforamtion" class="footer_menu_link">
+        <span class="text_bold">개인정보 처리방침</span>
+      </a>
+      </li>
+      <li class="footer_menu_item">
+      <!-- ::before -->
+      <a href="/term/youth" class="footer_menu_link">청소년 보호정책</a>
+      </li>
+      <li class="footer_menu_item">
+      <!-- ::before -->
+      <a href="/terms/use" class="footer_menu_link">이용약관</a>
+      </li>
+      <li class="footer_menu_item">
+      <!-- ::before -->
+      <a href="/help/main" class="footer_menu_link">고객센터</a>
+      </li>
+      <li class="footer_menu_item">
+      <!-- ::before -->
+      <a href="/help/partner" class="footer_menu_link">티켓판매안내</a>
+      </li>
+      <li class="footer_menu_item">
+       <!-- ::before -->
+       <a href="/advertisement/" class="footer_menu_link">광고안내</a>
+      </li>
+    </ul>
+  </div>
+ <!-- 맨 밑 하단 회사정보-->
+ <div class="footer_inner">
+  <span class="footer_corp_title"><b>준영 주식회사</b></span>
+  <address class="footer_address">
+    <p>
+      <span class="footer_address_item">주소: 06043 서울특별시 강남구 강남대로</span>
+      <span class="footer_address_item">
+        <!-- before -->
+        대표이사: 이준영
+      </span>
+      <span class="footer_address_item">
+        <!-- before -->
+        사업자등록번호: 144-81-25090
+      </span>
+    </p>
+    <p>
+      <span class="footer_address_item">010-6368-9069</span>
+      <span class="footer_address_item">
+        <!-- before -->
+        tjsans9069@naver.com
+      </span>
+      <span class="footer_address_item">
+        <!-- before -->
+        통신판매업 신고번호: 제 2023-서울강남-04352호
+      </span>
+      <span class="footer_address_item">
+        <!-- before -->
+        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1448125090" target="_blank" class="btn_hyperlink" rel="noreferrer"><b>사업자정보확인</b></a>
+      </span>
+      <span class="footer_address_item">
+        <!-- before -->
+        개인정보보호 책임자: 이지수
+      </span>
+    </p>
+  </address>
+  <span class="footer_copyright">Copyright @ JY LINK Corporation. All rights reserved.</span>
+  <div class="footer_etc">
+    <ul class="footer_sns">
+      <li class="footer_sns_item">
+        <a href="https://blog.naver.com/" target="_blank" class="footer_sns_link" rel="noreferrer">
+          <span class="common_icon icon_naverblog_gray">
+            <span class="blind">네이버블로그</span>
+            <!-- after -->
+          </span>
+        </a>
+      </li>
+      <li class="footer_sns_item">
+        <a href="https://www.instagram.com/" target="_blank" class="footer_sns_link" rel="noreferrer">
+          <span class="common_icon icon_instagram_gray">
+            <span class="blind">인스타</span>
+          </span>
+        </a>
+      </li>
+      <li class="footer_sns_item">
+        <a href="https://www.youtube.com/" target="_blank" class="footer_sns_link" rel="noreferrer">
+          <span class="common_icon icon_youtube_gray">
+            <span class="blind">유튜브</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+  
+
+</body>
+</html>

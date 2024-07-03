@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/agreeToTerms.css">
+    <title>약관동의</title>
+</head>
+<body>
+    <div class="memberContainer">
+        <div class="header">
+            <a href="" class="headerLogo"><span></span></a>
+            <div class="headerTitle">약관동의</div>
+        </div>
+        <form action="https://www.naver.com">
+            <div class="contents">
+                <div class="contentWrapper">
+                    <div class="checkboxAll">
+                        <label for="checkAll" class="All">
+                            <input type="checkbox" id="checkAll">
+                            <span class="text">
+                                약관 전체 동의
+                            </span>
+                        </label>
+                    </div>
+                    <div class="termsBlock">
+                            <div class="label">필수 동의 항목</div>
+                            <div class="termsItem">
+                                <div class="uCheckbox">
+                                    <label for="check1" class="label2">
+                                        <div class="inputWrap">
+                                            <input type="checkbox" class="singleSelector require" id="check1">
+                                            <span class="text">
+                                            </span>
+                                        </div>
+                                    </label>
+                                    <div class="checkboxCont"><a href="#" class="btn btnLink">[필수] 이용약관</a></div>
+                                </div>
+                                <div class="uCheckbox">
+                                    <label for="check2" class="label2">
+                                        <div class="inputWrap">
+                                            <input type="checkbox" class="singleSelector require" id="check2">
+                                            <span class="text">
+                                            </span>
+                                        </div>
+                                    </label>
+                                    <div class="checkboxCont"><a href="#" class="btn btnLink">[필수] 전자금융거래 이용약관</a></div>
+                                </div>
+                                <div class="uCheckbox">
+                                    <label for="check3" class="label2">
+                                        <div class="inputWrap">
+                                            <input type="checkbox" class="singleSelector require" id="check3">
+                                            <span class="text">
+                                            </span>
+                                        </div>
+                                    </label>
+                                    <div class="checkboxCont"><a href="#" class="btn btnLink">[필수] 개인정보 수집 동의서</a></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="termsBlock">
+                        <div class="label">선택 동의 항목</div>
+                        <div class="termsItem">
+                            <div class="uCheckbox">
+                                <label for="check4" class="label2">
+                                    <div class="inputWrap">
+                                        <input type="checkbox" class="singleSelector" id="check4">
+                                        <span class="text"></span>
+                                    </div>
+                                </label>
+                                <div class="checkboxCont"><a href="#" class="btn btnLink">[선택] 개인정보 수집동의서</a></div>
+                            </div>
+                            <div class="uCheckbox">
+                                <label for="check5" class="label2">
+                                    <div class="inputWrap">
+                                        <input type="checkbox" class="singleSelector" id="check5">
+                                        <span class="text"></span>
+                                    </div>
+                                </label>
+                                <div class="checkboxCont"><a href="#" class="btn btnLink">[선택] 위치기반서비스 이용약관</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ubtnArea">
+                        <div class="col">
+                            <button type="submit" class="uBtn active" data-id="nextStep" disabled="">다음단계</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>    
+        <div class="footer"></div>
+    </div>
+
+    <script>
+        // 전체동의 누르면 다 체크되게
+        document.getElementById('checkAll').addEventListener('change', function() {
+        var checkboxes = document.querySelectorAll(".singleSelector");
+        var allChecked = this.checked;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = allChecked;
+        }
+            updateButtonState();
+        });
+
+        // 동의항목 하나라도 체크 해제되면 전체동의 체크 해제되게
+        var singleSelectors = document.querySelectorAll(".singleSelector");
+        for (var i = 0; i < singleSelectors.length; i++) {
+            singleSelectors[i].addEventListener('change', function() {
+                var allCheckbox = document.getElementById('checkAll');
+                var allChecked = true;
+
+                for (var j = 0; j < singleSelectors.length; j++) {
+                    if (!singleSelectors[j].checked) {
+                        allChecked = false;
+                        break;
+                    }
+                }
+
+                allCheckbox.checked = allChecked;
+                updateButtonState();
+            });
+        }
+
+        // 필수항목 3개 다 체크되면 버튼 색깔 바뀌게
+        function updateButtonState() {
+            var requiredCheckboxes = document.querySelectorAll(".singleSelector.require");
+            var allChecked = true;
+
+            for (var i = 0; i < requiredCheckboxes.length; i++) {
+                if (!requiredCheckboxes[i].checked) {
+                    allChecked = false;
+                    break;
+                }
+            }
+
+            var nextStepButton = document.querySelector("button[data-id='nextStep']");
+            if (allChecked) {
+                nextStepButton.disabled = false; // 버튼 체크 활성화
+                nextStepButton.style.backgroundColor = "#1769ff"; // 원하는 색상으로 변경
+            } else {
+                nextStepButton.disabled = true; // 버튼 체크 비활성화
+                nextStepButton.style.backgroundColor = ""; // 기본 색상으로 돌아가게
+            }
+        };
+
+         // 다음단계 버튼 누르면 약간 효과 주기
+        document.querySelector(".uBtn").addEventListener("mousedown", function() {
+            this.classList.add("special");
+        });
+        document.querySelector(".uBtn").addEventListener("mouseup", function() {
+            this.classList.remove("special");
+        });
+        document.querySelector(".uBtn").addEventListener("mouseleave", function() {
+            this.classList.remove("special");
+        });
+    </script>
+    
+</body>
+</html>

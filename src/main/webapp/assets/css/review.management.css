@@ -1,0 +1,152 @@
+body {
+    font-family: "Notosans", -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "Malgun Gothic", Arial, sans-serif;
+}
+a {
+    color: #242428;
+}
+.h3_line {
+    position: relative;
+    border-bottom: 2px solid #cfd0d7;
+}
+.help_recont + h4 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 6px;
+}
+.guide_text {
+    margin: 36px 0 28px;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    color: #878d95;
+}
+.mypage_tab {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.mypage_tab li:first-child {
+    border-left: 1px solid #ecedf2;
+}
+.mypage_tab li {
+    display: table-cell;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #ecedf2;
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 0;
+}
+.mypage_tab a {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+}
+
+.basic_tbl {
+    border-bottom: 1px solid #ecedf2;
+}
+.basic_tbl table {
+    width: 100%;
+}
+table thead th {
+    font-weight: bold;
+    padding: 14px 18px 14px;
+    font-size: 14px;
+    color: #62676c;
+    line-height: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #cfd0d7;
+    letter-spacing: -1px;
+}
+.basic_tbl td {
+    padding: 8px 18px;
+    color: #242428;
+    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tl {
+    text-align: left !important;
+}
+.fs12 {
+    font-size: 12px !important;
+}
+.basic_tbl a:hover {
+    text-decoration: underline;
+}
+.paging {
+    text-align: center;
+    margin-top: 30px;
+}
+.paging a.first, .paging a.prev, .paging a.next, .paging a.end {
+    width: 24px;
+    height: 34px;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 4px;
+}
+.paging a, .paging strong {
+    display: inline-block;
+    position: relative;
+    min-width: 20px;
+    margin-right: 2px;
+    width: 34px;
+    line-height: 34px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: top;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Arial, sans-serif;
+    height: 34px;
+    color: #878d95;
+}
+.paging strong {
+    border-color: #242428;
+    color: #fff;
+    background-color: #242428;
+    border-radius: 50%;
+}
+.paging a.first::after, .paging a.end::after {
+    width: 24px;
+    height: 24px;
+    background-image: url(https://tketlink.dn.toastoven.net/markup_resources/2024042401_M/renewal/pcweb/img/old-svg.svg);
+    background-size: 660px 629px;
+    background-position: -144px -414px;
+    background-repeat: no-repeat;
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.paging a.prev::after, .paging a.next::after {
+    width: 24px;
+    height: 24px;
+    background-image: url(https://tketlink.dn.toastoven.net/markup_resources/2024042401_M/renewal/pcweb/img/old-svg.svg);
+    background-size: 660px 629px;
+    background-position: -112px -414px;
+    background-repeat: no-repeat;
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.paging a.prev:hover::after, .paging a.next:hover::after {
+    background-position: -188px -175px;
+}
+.paging a.first:hover::after, .paging a.end:hover::after {
+    background-position: -176px -414px;
+}
+.paging a.prev::after, .paging a.first::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+}

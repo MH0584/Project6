@@ -1,0 +1,213 @@
+.main_content {
+  flex: 0 0 auto;
+  width: 540px;
+  padding-bottom: 20px;
+  display: block;
+}
+.bandIntroView {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1.4px 1.3px 0 rgba(62, 73, 89, .07);;
+}
+.headerWrap {
+  position: relative;
+  padding: 0 22px;
+  border-bottom: 1px solid #e7e7e7;
+  height: 50px !important;
+}
+.contentHeader {
+  height: 50px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h1_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.bandIntroWrapper {
+  padding: 18px 20px 23px;
+  margin-bottom: 13px;
+
+}
+.textareaBox {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #fcfcfc;
+  margin: 2px 0 20px;
+}
+.uTextarea {
+  height: 100%;
+  padding: 0;
+  line-height: 18px;
+  min-height: 52px;
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fcfcfc;
+}
+.uTextarea textarea {
+  padding: 13px 15px;
+  z-index: 3;
+  line-height: 20px;
+  position: relative;
+  width: 100%;
+  border: none;
+  background: 0 0;
+  font-size: 13px;
+  resize: none;
+  overflow: auto;
+}
+.border {
+  line-height: 18px;
+  z-index: 2;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #ebebeb;
+}
+.border::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #ebebeb;
+  z-index: 1 !important;
+  content: '';
+  line-height: 18px;
+}
+.bandIntroMediaList {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f2f4;
+}
+
+.inputLabel {
+  display: inline-block;
+  position: relative;
+  width: 112px;
+  height: 112px;
+  cursor: pointer;
+}
+.inputFile {
+  overflow: hidden !important;
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0;
+  cursor: pointer;
+}
+.photoUploadList {
+  display: flex;
+}
+.photoItem {
+  margin-left: 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.btnUpload {
+  display: inline-block;
+  position: relative;
+  width: 112px;
+  height: 112px;
+  cursor: pointer;
+}
+.btnUpload::before {
+  width: 21px;
+  height: 20px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_icons.png);
+  background-position: -70px -667px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+}
+.btnUpload::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px dashed #d9d9d9;
+  border-radius: 1px;
+  content: '';
+}
+._locationText {
+  align-items: center;
+  margin-top: 17px;
+}
+.introOptionBox {
+  flex: 1 1 auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+}
+.addressText::before {
+  width: 12px;
+  height: 16px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_icons.png);
+  background-position: -756px -18px;
+  margin: 3px 10px 0 0;
+  vertical-align: top;
+}
+.textButton {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+.introOption {
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+.introOptionBox2 {
+  flex: 1 1 auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+  overflow: hidden;
+  padding-bottom: 17px !important;
+  padding-top: 15px !important;
+  text-align: center !important;
+}
+.btnConfirm {
+  background: #444a61;
+  line-height: 1;
+  position: relative;
+  min-width: 90px;
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 1px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+}

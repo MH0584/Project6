@@ -1,0 +1,169 @@
+.lyWrap {
+  z-index: 30000;
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background: rgba(0, 0, 0, .75);
+  overflow: auto;
+}
+.lyContent {
+  position: relative;
+    width: 340px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .34), 0 10px 10px 0 rgba(0, 0, 0, .06);
+    align-self: flex-start;
+}
+.modalHeader {
+  position: relative;
+  padding: 0 30px;
+  border-bottom: 1px solid #d9d9d9 !important;
+  text-align: center;
+  display: block;
+}
+.modalHeader::before {
+  display: table;
+  content: ' ';
+  text-align: center;
+}
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  box-sizing: border-box;
+  padding: 12px 0 11px;
+}
+.modalHeader::after {
+  clear: both;
+  display: table;
+  content: ' ';
+  text-align: center;
+}
+.modalContentGender {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 20px !important;
+}
+.selectArea {
+  margin-top: 0;
+}
+.selectArea li+li {
+  margin: 13px 0 0 0;
+}
+.check_gender {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.checkInput {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkLabel {
+  min-width: 20px;
+  min-height: 20px;
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.shape {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+}
+.shape::before {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all .2s ease;
+  content: '';
+}
+.shape::after {
+  background: #2ecc71;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: block;
+  transition: all .2s ease;
+  content: '';
+}
+.checkInput:checked+.checkLabel .shape::after {
+  background: #2ecc71;
+  opacity: 1;
+}
+.text {
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.modalFooter {
+  margin: 0 20px;
+  padding: 20px 0 25px;
+  font-size: 0;
+  text-align: center;
+  display: block;
+}
+.btnCancel {
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  line-height: 1;
+  position: relative;
+  min-width: 90px;
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: 500;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btnOk {
+  margin: 0 5px;
+  background: #444a61;
+  line-height: 1;
+  position: relative;
+  min-width: 90px;
+  height: 34px;
+  padding: 0 15px;
+  border-radius: 1px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+}

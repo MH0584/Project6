@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+/* common */
+.inner {width:1120px; margin:0 auto;}
+img {width:100%; display: block;}
+.point{color: #fa2828;}
+
+
+/* 메인페이지 */
+#app {
+  min-width: 1180px;
+}
+/* header */
+header .utill {height: 40px;background-color: #f8f9fa;}
+header .utill ul {float: right;}
+header .utill ul .utill_link{float: left;display: inline-block; position: relative; padding: 0 6px;font-size: 0;}
+header .utill ul .utill_link::before{position: absolute;left: 0;top: 50%;width: 1px;height: 10px;background: #cfd0d7;transform: translateY(-50%); content: "";}
+header .utill ul .utill_link:first-child::before{content:none;}
+header .utill ul .utill_link a {display: block;padding: 10px 6px 9px;font-size: 13px;line-height: 18px; color: #878d95;font-weight: bold;}
+header .utill ul .utill_link a:hover {text-decoration : underline;} /*이거 추가하면 어떻습니까?*/
+/* nav */
+.nav_box .inner{ display: flex;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;margin: 0 auto;width: 1120px;height: 88px;}
+.nav_box .logo{width:130px;height:50px;background-repeat: no-repeat; background-image:url(/assets/img/ticklink/logo.svg);text-indent: -999px; margin: 0 10px;}
+.nav_box .logo a {width: 100%; height:100%;}
+.nav_box .nav li:first-child {margin-left: 20px;}
+.nav_box .nav li a{font-size: 26px;font-weight: 700;line-height: 34px;letter-spacing: -0.04em; padding:0 10px;}
+.nav_box .nav li a:hover {color : #fa2828;} /*이것도 추가하면 어떻습니까*/
+
+/* gnb */
+.gnb_box{border-top: 1px solid #ecedf2;border-bottom: 1px solid #242428;}
+.gnb_box .gnb_list{}
+.gnb_box .gnb_list .gnb_link {display: block;padding: 17px 11px;font-size: 16px;line-height: 24px; color: #242428;}
+.gnb_box .gnb_list .gnb_link a{font-weight: 700;}
+.gnb_box .gnb_list .gnb_link a:hover {color : #fa2828} /*이것도 추가하면 어떻습니까*/
+.main_swiper_box {max-width:1920px;height:560px;text-align: center;}
+
+/* banner */
+.main_swiper_box{position:relative;width:1920px;height:560px;}
+.big_banner{height:560px;width: 100%;text-align: center;}
+.big_banner img{height:100%;width: 100%;}
+.sm_box{position: absolute;bottom: 57px;left: 50%;margin-left: -560px;z-index: 2;} 
+.sm_box .sm_img{margin-right: 10px;display: inline-block;overflow: hidden;width: 55px;height: 68px;border-radius: 6px;background: #f5f6f9;}
+.sm_box .sm_img:hover a{opacity: 1; border: 2px solid #fff;border-radius: 6px;}
+.sm_box .sm_img a {opacity: 0.8;}
+
+/* 티켓오픈 */
+.con_box{margin-top:110px;}
+.con_header {margin-top: 80px; display: flex;justify-content: space-between;}
+.con_header a{padding-top: 10px;}
+.con_tit{font-size: 32px; line-height: 32px;letter-spacing: -0.05em;}
+.item_box{}
+.item_list{display: flex;flex-wrap: wrap;margin:-20px -30px 0 0;}
+.item_list .card_item{margin: 50px 30px 0 0; width: 200px;}
+.card_item .img_box {width:200px;height:247px;border-radius: 10px;overflow: hidden;}
+.card_item_04 .img_box img:hover ,.card_item .img_box img:hover{transform: scale(1.1);transition: transform .2s cubic-bezier(0.165, 0.84, 0.44, 1);}
+.txt_box {margin-top: 16px;font-size: 14px;line-height: 22px;}
+.txt_box .item_tit {display: block;max-width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-height: 52px;font-size: 18px;line-height: 26px;color: #242428;}
+.txt_box .info_box {margin-top: 6px;}
+.txt_box .info_box > span {display:block;color: #62676c;}
+.txt_box .info_box .item_sub_tit {font-weight: 700;}
+
+/* 길찾기 */
+.con_sub {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.area_btn_box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.area_btn {
+  padding: 8px 18px 8px;
+  min-height: 40px;
+  border: 1px solid #dcdde1;
+  border-radius: 40px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242428;
+  outline: none;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.area_btn:hover {
+  border: 1px solid #242428;
+}
+.area_btn [aria-selected=true] {
+  padding: 6px 20px 8px;
+  border-color: #242428;
+  background: #242428;
+  color: #fff;
+}
+.area_btn_item {
+  margin-right: 6px;
+}
+.map_area {
+  height: 800px;
+  background-color: #cfd0d7;
+  margin-bottom: 40px;
+}
+
+/* 동영상 */
+.bg_gray{background: #f5f6f9;}
+
+/* 전시 */
+.card_item_04{margin: 50px 28px 0 0;width: 259px;}
+.card_item_04 .img_box{border-radius: 10px;overflow: hidden;width: 259px;height: 320px;}

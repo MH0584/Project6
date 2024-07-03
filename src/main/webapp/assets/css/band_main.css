@@ -1,0 +1,634 @@
+#wrap {
+  max-width: 1034px;
+  margin: 0 auto;
+}
+/* content */
+#content{
+  height: 79.12px;
+  margin-top: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+#content_tab {
+  width: 1034px;
+  height: 78.17px;
+  margin: 0 auto;
+  padding: 22px 0;
+}
+
+#content_tab_left {
+  width: 276.67px;
+  height: 56.17px;
+  float: left;
+  display: flex;
+}
+#tab_myband {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  padding-bottom: 17px;
+}
+/* 내 밴드 버튼*/
+.myband_text {
+  font-size: 26px;
+  font-weight: 600;
+  color: #a8a8a8;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 17px;
+}
+.myband_text:hover, .myband_text:focus, .meet_text:hover, .meet_text:focus {
+  color: #000;
+}
+/* 소모임 버튼 */
+.meet_text {
+  font-size: 26px;
+  font-weight: 600;
+  color: #a8a8a8;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  padding-bottom: 17px;
+}
+
+
+#content_tab_right {
+  width: 95px;
+  height: 40px;
+  float: right;
+  display: flex;
+}
+
+#content_tab_right > img {
+  width: 20px;
+  height: 20px;
+}
+/* 동네밴드 버튼 */
+#tab_place_band {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn_option {
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 7px;
+  height: 32px;
+  border-radius: 16px;
+}
+.local_icon {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  background-color: #777;
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_svg.svg#normalMapCommunity);
+}
+.option_text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #444;
+  line-height: 20px;
+  text-align: left;
+}
+/* 목록편집 버튼 */
+#tab_list_edit {
+  width: 93.63px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.list_edit_text {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--tier2TextMainLv02);
+  line-height: 20px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+#main_top {
+  width: 974px;
+  height: 56px;
+  padding: 14px 30px;
+  margin-top: 38px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.locationimg > img {
+  width: 15px;
+  height: 18px;
+  display: inline-block;
+}
+
+#main {
+  width: 1034px;
+  position: relative;
+  padding: 20px 0;
+  padding-bottom: 35px !important;
+  margin: 0 auto;
+  display: flex;
+}
+#band_card_list {
+  height: 210px;
+  margin-bottom: 25px !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px 25px;
+}
+ol, ul {
+  list-style: none;
+}
+
+#band_card_item {
+  transition: all .1s ease-in-out;
+}
+
+#band_inner {
+  height: 210px;
+  width: 186px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .03);
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 14px;
+  margin-bottom: 25px !important;
+}
+
+#cover {
+  width: 186px;
+  height: 135px;
+  padding-top: 55px;
+  text-align: center;
+}
+
+#cover > img {
+  width: 26px;
+  height: 26px;
+  mask-size: 26px 26px;
+  background-color: #83879b;
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_svg.svg#ico_create_band);
+}
+
+#band_name {
+  width: 186px;
+  height: 85px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  width: 186px;
+  vertical-align: top;
+  padding: 11px 12px 14px;
+}
+
+.url_text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.band_cover_link .url_text {
+  font-weight: normal;
+}
+.band_cover_link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .03);
+}
+.coverInner {
+  transform: translateY(0);
+  border-radius: 2px 2px 0 0;
+  text-align: left;
+  width: 186px;
+  height: 135px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  background-color: #f5f6f8;
+}
+.coverInner::before {
+  margin: -15px 0 0 -40px;
+  width: 80px;
+  height: 29px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_icons.png
+  );
+  background-position: -92px -446px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.coverImg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  height: auto;
+  width: 100%;
+}
+#cover_band {
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+.uCoverImage {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.-border::after {
+  border-radius: 2px 2px 0 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content:'';
+}
+.create_band_img {
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240603162344/images/spr_svg.svg#ico_create_band);
+  width: 26px;
+  height: 26px;
+  mask-size: 26px 26px;
+  background-color: #83879b;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#band_name > p {
+  font-size: 14px;
+}
+#main2 {
+  position: relative;
+  width: 1034px;
+  margin: 0 auto;
+}
+.member {
+  float: left;
+  color: #a8a8a8;
+}
+
+#local_meet_band {
+  position: relative;
+}
+#local_title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+.setting_local {
+  width: auto;
+  height: auto;
+  color: #0dcb67;
+}
+.open_keyword_btn {
+  width: 29px;
+  height: 29px;
+  background-size: 29px 29px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#arrow-down-d-btn);
+  top:-2px;
+  position: relative;
+  margin-left: 6px;
+  vertical-align: middle;
+  overflow: hidden;
+  color: transparent;
+}
+
+.recruit_btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  height: 28px;
+  line-height: 18px;
+}
+
+.recruit_btn::before {
+  width: 18px;
+  height: 19px;
+  -webkit-mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-plue-circle);
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-plue-circle);
+  -webkit-mask-size: 18px 19px;
+  mask-size: 18px 19px;
+  background-color: #222;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  -webkit-mask-size: 18px 18px;
+  mask-size: 18px 18px;
+  content: '';
+}
+
+.title_main_home {
+  font-size: 20px;
+  font-weight: 600;
+  color:#222;
+  position: relative;
+  line-height: normal;
+  margin-top: 30px !important;
+}
+.close_btn::before {
+  position: static;
+  vertical-align: top;
+  margin-top: 3px;
+  display: inline-block;
+  text-align: left;
+  font-size: 0;
+  z-index: 1000;
+  width: 10px;
+  height: 10px;
+  background-size: 10px 10px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-close-10);
+  opacity: .4;
+}
+
+.help_btn {
+  border: 0;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  overflow: visible;
+  text-transform: none;
+}
+.help_btn::before {
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-info-18);
+}
+.help {
+  overflow: hidden !important;
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  width: 1px;
+  height: 1px;
+}
+.bubble_help_layer {
+  padding-right: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 5px;
+  z-index: 1000;
+  padding: 13px 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px 5px rgba(144, 152, 156, .1);
+  border-radius: 10px;
+  width: 296px;
+}
+
+.close_btn {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 5px;
+  overflow: visible;
+  width: 10px;
+  height: 10px;
+  background-size: 10px 10px;
+  overflow: hidden;
+  display: inline-block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-close-10);
+  opacity: .4;
+}
+.band_meet_content_link {
+  margin-bottom: -20px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#band_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px !important;
+}
+
+#band_item_view {
+  width: 504px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .03);
+  border-radius: 20px;
+}
+#band_meet_content {
+  position: relative;
+  display: flex;
+  min-height: 117px;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+}
+
+#band_meet_content_text {
+  flex: 0 0 auto;
+  width: 351px;
+}
+.band_meet_content_title {
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+.band_meet_content_main {
+  overflow: hidden;
+  display: -webkit-box;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  line-height: 1.43;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  -webkit-line-clamp: var(--lineClamp, 2);
+  -webkit-box-orient: vertical;
+  text-align: left;
+  color: #555;
+}
+#band_meet_content_tag {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 4px;
+  margin-top: 10px !important;
+}
+.local_tag {
+  position: relative;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 11px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  line-height: 20px;
+  font-size: 11px;
+  color: #777;
+  background-color: #fff;
+}
+.local_tag::before {
+  width: 10px;
+  height: 10px;
+  mask-size: 10px 10px;
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#normal_map_fill);
+  display: inline-flex;
+  align-items: center;
+  margin: 0 2px 0 -1px;
+  content: '';
+  background-color: #83879b;
+}
+#band_meet_content_img {
+  position: relative;
+  flex: 0 0 auto;
+  width: 93px;
+  height: 93px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color:#f5f6f8;
+}
+#band_meet_info_wrap {
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  padding: 16px 24px 24px;
+}
+#meet_info_box {
+  flex: 1 1 auto;
+  padding-left: 11px;
+  border-left: 1px solid #e5e5e5;
+  text-align: left;
+  margin-left: -1px !important;
+}
+#meet_together {
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+}
+.-emphasis {
+  font-weight: 700;
+  color: #0dcb67;
+}
+.band_cover_img {
+  height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+/* footer */
+#footer { 
+  display: block;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  margin-top: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+#footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1034px;
+  min-height: 45px;
+  margin: 0 auto;
+  padding: 14px 0 16px;
+}
+.menu_list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  max-width: 900px;
+}
+.menu_list_item {
+  display: inline-flex;
+  align-items: center;
+}
+#footer .menu_link {
+  line-height: 1.667;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #777;
+}
+#footer .menu_list_item+.menu_list_item::before {
+  margin: 0 6px 0 8px;
+  display: inline-block;
+  vertical-align: top;
+  width: 2px;
+  height: 2px;
+  background-color: #a8a8a8;
+  content: '';
+}
+#footer address {
+  flex: 0 0 auto;
+  color: #222;
+  font-style: normal;
+  font-size: 12px;
+}

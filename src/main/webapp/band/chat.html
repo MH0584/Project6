@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/clear.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/band.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/band_header.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/band_chat.css'>
+  <title>BAND - 채팅</title>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</head>
+<body class="skin3">
+  <div class="ChatMainLayoutView">
+    <div id="wrap" class="sChatPop">
+      <header class="chatHeader sf_bg bg_blue">
+        <div class="chatHeaderInfoBox">
+          <h1 class="chatTitle">치이카와, 장예원 (2)</h1>
+          <h2 class="chatSubTitle">6조 밴드</h2>
+        </div>
+        <button class="btnPopBandGo" onclick="window.close()"></button>
+      </header>
+      <div class="chatRoom">
+        <div class="chatList">
+          <div class="messageListRegion">
+            <div class="chattingRoomMessageListView">
+              <div>
+                <div class="logWrap logEvent">
+                  <!-- <time class="time">2024년 6월 10일 월요일</time> -->
+                </div>
+                <!-- 채팅 내역 -->
+                <div class="childViewContainer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 메시지 입력창 -->
+      <section class="commentWrite">
+        <div class="mentionsWrap">
+          <div class="mentions-input">
+            <div class="mentions">
+              <div></div>
+            </div>
+            <textarea class="commentWrite" id="commentInput" placeholder="보낼 메시지를 입력하세요." maxlength="10000"></textarea>
+          </div>
+          <div class="submitWrap">
+            <button class="uButton writeSubmit">보내기</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/chat.js"></script>
+</body>
+</html>

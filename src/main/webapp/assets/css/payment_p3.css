@@ -1,0 +1,339 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+header{
+  width: 1000px;
+  height: 55px;
+} 
+main{
+  display: flex;
+  width: 1000px;
+  height: 800px;
+  border: 3px solid #F5F5F5;
+}
+.paystepup3{
+  height: 44px;
+}
+.main_1{
+  width: 721px;
+  height: 800px;
+  background-color: #F8F9FA;
+  border: 1px solid #ECEDF2;
+}
+.main_2{
+  height: 100%;
+  width: 279px;
+}
+.titleimgbox{
+  width: 242px;
+  height: 51px;
+  display: flex;
+  margin-left: 9px;
+  margin-top: 19px;
+}
+.titleimgbox > div:nth-child(2){
+  font-weight: bold;
+  margin-left: 15px;
+  padding-top: 3px;
+  font-size: 16px;
+}
+.reservationinfo{
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 9px;
+}
+.reservationinfoborder{
+  width: 270px;
+  height: 72px;
+  border: 1px solid #ECEDF2;
+  margin-left: 9px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+.reservationinfoborder > div:nth-child(1){
+  font-weight: 600;
+}
+.reservationinfoborder > div:nth-child(2){
+  font-weight: bold;
+  color: red;
+}
+.resertable{
+  margin-left: 9px;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.resertable > div:nth-child(1){
+  font-weight: 800;
+  font-size: 15px;
+}
+.resertable > div:nth-child(2){
+  font-size: 15px;
+}
+.divhrgrey{
+  margin-left: 9px;
+  margin-top: 4px;
+  width: 270px;
+  border: 2px solid #ECEDF2;
+  
+}
+.divhrblack{
+  margin-left: 9px;
+  margin-top: 4px;
+  width: 270px;
+  border: 1px solid #242428;
+}
+.canceltitle{
+  color: #878FB4;
+}
+.cancel{
+  font-weight: 500;
+  margin-left: 9px;
+  margin-top: 8px;
+}
+.howtoreceive{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.howtoreceivebox{
+  background-color: #FFFFFF;
+  display: flex;
+  width: 680px;
+  height: 68px;
+  border: 1px solid #ECEDF2;
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.ticket{
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 22px;
+  padding-left: 20px;
+}
+.pickupbox{
+  margin-top: 15px;
+  margin-left: 64px;
+  width: 120px;
+  height: 36px;
+  border: 1px solid #000000;
+  text-align: center;
+  padding-top: 8px;
+}
+.pickupnotice{
+  color: #968D95;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.colred{
+  color: red;
+  font-size: 18px;
+}
+.ordererinformation{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.ordererinformationbox1{
+  width: 680px;
+  height: 55px;
+  border: 1px solid #ECEDF2;
+  background-color: white;
+  margin-top: 14px;
+  margin-left: 20px;
+  display: flex;
+}
+.orderername{
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+.orderernameresult{
+  margin-left: 46px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 16px;
+}
+.phonenumber{
+  margin-left: 180px;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.inputphonenumber{
+  margin-top: 14px;
+  margin-left: 20px;
+  width: 180px;
+  height: 28px;
+  font-size: 18px;
+  border: 1px solid #ECEDF2;
+}
+.ordererinformationbox2{
+  width: 680px;
+  height: 54px;
+  border: 1px solid #ECEDF2;
+  border-top: none;
+  background-color: white;
+  margin-left: 20px;
+  display: flex;
+}
+.inputemail{
+  width:517px;
+  height: 28px;
+  margin-left: 47px;
+  margin-top: 14px;
+  border: 1px solid #ECEDF2;
+  font-size: 18px;
+}
+.ordererok{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.agreebox1{
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid #ECEDF2;
+  background-color: #FFFFFF;
+  display: flex;
+  width: 680px;
+  height: 69px;
+}
+.agreecheck1{
+  margin-left: 15px;
+  margin-top: 15px;
+  letter-spacing: -1px;
+}
+.checkboxdiv1{
+  width: 20px;
+  height: 20px;
+  margin-top: 23px;
+  margin-left: 15px;
+}
+/* input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+input[type="checkbox"]:checked {
+  background: black;
+  border: none;
+} */
+.agreebox2{
+  width: 680px;
+  height: 46px;
+  border: 1px solid #ECEDF2;
+  border-top: none;
+  margin-left: 20px;
+  background-color: #FFFFFF;
+  display: flex;
+}
+.checkboxdiv2{
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  margin-top: 13px;
+}
+.agreecheck2{
+  margin-left: 15px;
+  margin-top: 13px;
+  letter-spacing: -1px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background: white;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  width: 11px;
+  height: 20px;
+  border: solid red;
+  border-width: 0 3px 2px 0;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#totalAmount{
+  color: red;
+  font-size: 15px;
+}
+.agreebox3{
+  margin-left: 9px;
+  margin-top: 14px;
+  width: 270px;
+  height: 25px;
+  display: flex;
+}
+.checkboxdiv3{
+  margin-left: 2px;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+.agreecheck3{
+  margin-left: 4px;
+  margin-top: 2px;
+  letter-spacing: -1px;
+}
+.prenextbutton{
+  position: absolute;
+  left: 774px;
+  top: 700px;
+  width: 207px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.prenextbtn{
+  width: 100px;
+  height: 56px;
+  background-color: #FFF;
+  border-radius: 5px;
+  border: 2px solid #DCDDE1;
+  cursor: pointer;
+}
+.prenextbtn:hover {
+  background-color: #DEDEDE;
+}
+.redprenextbtn{
+  width: 100px;
+  height: 56px;
+  background-color: #FA2828;
+  border-radius: 10px;
+  border: 2px solid #DCDDE1;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.redprenextbtn:hover {
+  background-color: #ED2626;
+}

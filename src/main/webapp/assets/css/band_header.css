@@ -1,0 +1,263 @@
+.ml_14 {
+  margin-left: 14px !important;
+}
+
+.ml_24 {
+  margin-left: 24px !important;
+}
+
+/* header, 헤더 */
+
+header {
+  display: block;
+}
+
+.header_area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20000;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.headerInner {
+  max-width: 1034px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.logo_search_area {
+  display: flex;
+  align-items: center;
+}
+
+.logo_area {
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -2px;
+  width: 70px;
+  height: 26px;
+}
+
+.logo::before {
+  width: 70px;
+  height: 26px;
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-gnb-band-logo);
+  mask-size: 70px 26px;
+  background-color: #222;
+  display: inline-block;
+  position: absolute;
+  content: '';
+}
+
+.bg_blue .logo::before {
+  background-color: #fff;
+}
+
+.search_input {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 289px;
+  height: 28px;
+  display: flex;
+  margin-top: -2px;
+  margin-left: 9px;
+  padding: 0 0 0 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, .05);
+  background-color: #F5F6F8;
+}
+
+.bg_blue .headerInner .search_input {
+  border: 1px solid rgba(0, 0, 0, .05);
+  background: rgba(0, 0, 0, .03);
+}
+
+.input_serach {
+  width: 289px;
+  height: 28px;
+  margin-left: 96px;
+}
+
+.btn_search {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 100%;
+  line-height: 0;
+}
+
+.btn_search::before {
+  width: 24px;
+  height: 24px;
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico-gnb-search);
+  mask-size: 24px 24px;
+  background-color: #222;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  margin-left: -3px;
+  width: 17px;
+  height: 17px;
+  mask-size: 17px 17px;
+  content: '';
+  cursor: pointer;
+  background-image: none;
+  opacity: .6;
+}
+
+.bg_blue .btn_search::before {
+  background-color: #fff;
+}
+
+.inputBandSearch {
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 12px;
+  color: #222;
+  background-color: transparent;
+}
+
+.bg_blue .search_input .inputBandSearch {
+  color: #ebebeb;
+}
+
+.bg_blue .inputBandSearch::placeholder {
+  color: rgba(235,235,235,.5)
+}
+
+.widgetList {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.btnIconStyle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+.uIconNews {
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico_gnb_news);
+  background-color: #222;
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  display: inline-block;
+  opacity: .55;
+}
+
+.uIconChat {
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico_gnb_chat);
+  background-color: #222;
+  width: 20px;
+  height: 20px;
+  mask-size: 20px 20px;
+  display: inline-block;
+  opacity: .55;
+}
+
+.btnMySetting {
+  display: flex;
+  align-items: center;
+}
+
+.btnMySetting::after {
+  width: 7px;
+  height: 7px;
+  mask-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_svg.svg#ico_gnb_arrow_triangle);
+  mask-size: 7px 7px;
+  background-color: #83879B;
+  display: inline-block;
+  margin-left: 9px;
+  margin-top: -3px;
+  vertical-align: top;
+  opacity: .55;
+  content: '';
+}
+
+.bg_blue .btnMySetting::after {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.uProfile {
+  flex: 0 0 auto;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.profileInner {
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.profileInner::before {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  display: block;
+  background-repeat: no-repeat;
+  content: '';
+  background-image: url(https://ssl.pstatic.net/cmstatic/webclient/dres/20240528100621/images/spr_icons.png);
+  background-position: -739px -451px;
+  margin: -7px 0 0 -7px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.profileInner > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.profileInner::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 50%;
+  content: '';  
+}
+
+/* 색상 */
+
+.bg_white {
+  background-color: #fff;
+}
